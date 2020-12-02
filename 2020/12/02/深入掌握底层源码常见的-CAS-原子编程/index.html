@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-xxxxxx-xx');
+  </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+  <script type="text/javascript">
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+
+  <!-- Baidu Push -->
+  
+  <script>
+    (function() {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc" />
+  <meta name="baidu-site-verification" content="PpzM9WxOJU" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="It&#39;s an IT blog..." />
+  <meta name="keyword" content="v-vincen,v-vincen,livemylife,IT  blog,Blog" />
+  <link rel="shortcut icon" href="/img/avatar/roguerabbit.jpg" />
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/beantech.min.css" />
+
+  <!-- Pygments Highlight CSS -->
+  
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
+
+
+  
+  <!-- wave start -->
+  <link rel="stylesheet" href="/css/wave.css" />
+  <!-- wave end -->
+  
+
+  
+  <!-- top start (article top hot config) -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <!-- top end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+  <!-- viewer start (Picture preview) -->
+  <link rel="stylesheet" href="/css/viewer.min.css" />
+  <!-- viewer end -->
+  
+
+  
+  <!-- Search start -->
+  <link rel="stylesheet" href="/css/search.css" />
+  <!-- Search end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/themecolor.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+
+  
+  <!-- gitalk start -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+  <link rel="stylesheet" href="/css/gitalk.css" />
+  <!-- gitalk end -->
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2020/12/02/深入掌握底层源码常见的-CAS-原子编程/">
+  <title>
+    
+    深入掌握底层源码常见的CAS原子编程 - 马称博客
+    
+  </title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+<body ontouchstart="" class="body--home">
+	<!-- ThemeColor -->
+	
+	<!-- ThemeColor -->
+<!-- <div class="toggle" onclick="document.body.classList.toggle('body--dark')">Switch Color</div> -->
+
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons bright-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+
+	
+
+	<!-- Gitter -->
+	
+	<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+	
+
+	<!-- Navigation (contains search)-->
+	<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Live My Life</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          
+
+          
+          
+
+          
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/archive/">Archives</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/categories/">Categories</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/tags/">Tags</a>
+          </li>
+          
+          
+
+          
+          <li><a class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+
+<script>
+  // Drop Bootstarp low-performance Navbar
+  // Use customize navbar with high-quality material design animation
+  // in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+	<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    header.intro-header {
+       /*post*/
+        background-image: url('/img/header_img/lml_bg.jpg');
+      
+    }
+
+    
+      #signature {/*signature*/
+        background-image: url('/img/signature/vincent-white.png');
+      }
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#并发编程" title="并发编程">并发编程</a>
+              
+            </div>
+            <h1>深入掌握底层源码常见的CAS原子编程</h1>
+            <h2 class="subheading">Easy to understand and master CAS</h2>
+            <span class="meta">
+              Posted by 马称博客 on
+              2020-12-02
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">15</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">3.8k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+	<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如果要聊原子类相关的话题, 可以先从基本的概念开始</p>
+<p><strong>1、原子类为了解决什么样的问题?</strong></p>
+<p>答: 为了解决并发场景下无锁的方式保证单一变量的数据一致性</p>
+<p><strong>2、什么情况下存在并发问题?</strong></p>
+<p>答: 多个线程同时读写同一个共享数据时存在多线程并发问题</p>
+<p>解决并发安全问题的方式有很多种方式, <strong>著名的就是 JDK 并发包 concurrent</strong>, 为了并发而存在的</p>
+<p>阅读文章收获如下知识：</p>
+<p>**1. 无锁编程产出背景</p>
+<ol start="2">
+<li>CAS 如何实现的无锁编程</li>
+<li>CAS 使用中的 “ABA” 痛点</li>
+<li>如何解决 “ABA” 问题**</li>
+</ol>
+<blockquote>
+<p>文章首发自公众号 <strong>【源码兴趣圈】</strong>，关注公众号第一时间获取后端硬核知识，已发布 <strong>【44】篇</strong> 原创技术博文</p>
+</blockquote>
+<h2 id="非原子计算"><a href="#非原子计算" class="headerlink" title="非原子计算"></a>非原子计算</h2><p>大家应该都知道, 类似于代码中的 i++ 操作, 虽然是一行, 但是执行时候是分为三步的</p>
+<ul>
+<li>从主存获取变量 i</li>
+<li>变量i值+1</li>
+<li>新增后变量i值写回主存</li>
+</ul>
+<p>写个小程序来更好的理解, 不论我们怎么运行下方程序, 99% 以上概率不会到达 100000000</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> NUM = <span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10000</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">10000</span>; j++) &#123;</span><br><span class="line">                NUM++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;).start();</span><br><span class="line">    &#125;</span><br><span class="line">    Thread.sleep(<span class="number">2000</span>);</span><br><span class="line">    System.out.println(NUM);</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 99149419</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>可以使用 JDK 自带的 synchronized, 通过 <strong>互斥锁的方式</strong> 同步执行 NUM++ 这个代码块</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> NUM = <span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10000</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">10000</span>; j++) &#123;</span><br><span class="line">                <span class="keyword">synchronized</span> (Object<span class="class">.<span class="keyword">class</span>) </span>&#123;</span><br><span class="line">                    NUM++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;).start();</span><br><span class="line">    &#125;</span><br><span class="line">    Thread.sleep(<span class="number">2000</span>);</span><br><span class="line">    System.out.println(NUM);</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 100000000</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>前面一直在说锁, 写着 AtomicInteger 在这说锁的问题, 咱不能挂着羊皮卖狗肉是吧</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e512d764a9f64568b021fe6fa5a1158b~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>如果看过 JDK 源码 JUC 包下的类库源代码, 关于 <strong>Atomic 开头的类库</strong> 应该不会陌生</p>
+<blockquote>
+<p>Atomic 英  [əˈtɒmɪk] 美  [əˈtɑːmɪk] 翻译 : 原子的</p>
+</blockquote>
+<p>如果不使用锁来解决上面的非原子自增问题, 可以这么来写</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> AtomicInteger NUM = <span class="keyword">new</span> AtomicInteger();</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10000</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">10000</span>; j++) &#123;</span><br><span class="line">              	<span class="comment">// 🚩 重点哦, 自增并获取新值</span></span><br><span class="line">                NUM.incrementAndGet();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;).start();</span><br><span class="line">    &#125;</span><br><span class="line">    Thread.sleep(<span class="number">2000</span>);</span><br><span class="line">    System.out.println(NUM);</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 100000000</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="AtomicInteger-简介"><a href="#AtomicInteger-简介" class="headerlink" title="AtomicInteger 简介"></a>AtomicInteger 简介</h2><p>看到一个技术点或者框架之类比较新颖的知识, 一般会思考两个问题</p>
+<h3 id="它是什么"><a href="#它是什么" class="headerlink" title="它是什么"></a>它是什么</h3><p>AtomicInteger 是 JDK 并发包下提供的 <strong>操作 Integer 类型原子类</strong>, 通过调用底层 <strong>Unsafe 的 CAS 相关方法实现原子操作</strong></p>
+<p>基于乐观锁的思想实现的一种无锁化原子操作, <strong>保障了多线程情况下单一变量的线程安全问题</strong></p>
+<blockquote>
+<p>关于 CAS 的概念下面会详细说明</p>
+</blockquote>
+<h3 id="有什么优点"><a href="#有什么优点" class="headerlink" title="有什么优点"></a>有什么优点</h3><p>AtmoicInteger 使用硬件级别的指令 CAS 来更新计数器的值, 机器直接支持的指令, <strong>这样可以避免加锁</strong></p>
+<p>比如像互斥锁 synchronized 在并发比较严重情况下, 会将锁 <strong>升级到重量级锁</strong></p>
+<p>唤醒与阻塞线程时会有一个 <strong>用户态到内核态的一个转变</strong>, 而转换状态是需要消耗很多时间的</p>
+<blockquote>
+<p>写过程序进行测试, 尽管 synchronized 经过升级后, 性能有了大幅度提升, 但在 <strong>一般并发场景下, CAS 无锁算法性能更高一些</strong></p>
+</blockquote>
+<p>当然不可能会有尽善尽美的存在, 关于 CAS 无锁算法会在下面说明劣势所在</p>
+<h2 id="结构分析"><a href="#结构分析" class="headerlink" title="结构分析"></a>结构分析</h2><p>AtomicInteger 有两个构造方法, 分别是一个无参构造及有参构造</p>
+<ul>
+<li>无参构造的 value 就是 int 的默认值 0</li>
+<li>有参构造会将 value 赋值</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">AtomicInteger</span><span class="params">()</span> </span>&#123; &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">AtomicInteger</span><span class="params">(<span class="keyword">int</span> initialValue)</span> </span>&#123;</span><br><span class="line">    value = initialValue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>AtomicInteger 有三个重要的变量, 分别是:</p>
+<p><strong>Unsafe:</strong> 可以理解它对于 Java 而言, 是一个 “BUG” 的存在, 在 AtomicInteger 里的最大作用就是直接操作内存进行值替换</p>
+<p><strong>value:</strong> 使用 int 类型存储 AtomicInteger 计算的值, 通过 volatile 进行修饰, <strong>提供了内存可见性及防止指令重排序</strong></p>
+<p><strong>valueOffset:</strong> value 的内存偏移量</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取Unsafe实例</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Unsafe unsafe = Unsafe.getUnsafe();</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> valueOffset;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 静态代码块，在类加载时运行</span></span><br><span class="line"><span class="keyword">static</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      	<span class="comment">// 获取 value 的内存偏移量</span></span><br><span class="line">        valueOffset = unsafe.objectFieldOffset</span><br><span class="line">                (AtomicInteger.class.getDeclaredField("value"));</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception ex) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Error(ex);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">int</span> value;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>这里罗列出一些常用API, 核心实现思路都是一致的, 会着重讲其中一个</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取当前 value 值</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">get</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 取当前的值, 并设置新的值</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">getAndSet</span><span class="params">(<span class="keyword">int</span> newValue)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取当前的值, 并加上预期的值</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">getAndAdd</span><span class="params">(<span class="keyword">int</span> delta)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取当前值, 并进行自增1</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">getAndIncrement</span><span class="params">()</span></span>;</span><br><span class="line">  </span><br><span class="line"><span class="comment">// 获取当前值, 并进行自减1</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">getAndDecrement</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>获取当前值并自增 #getAndIncrement()</strong></p>
+<p>看一下具体在源码中是如何操作的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">getAndIncrement</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  	<span class="keyword">return</span> unsafe.getAndAddInt(<span class="keyword">this</span>, valueOffset, <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * unsafe.getAndAddInt</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> var1 AtomicInteger 对象</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> var2 value 内存偏移量</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> var4 增加的值, 比如在原有值上 + 1</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">getAndAddInt</span><span class="params">(Object var1, <span class="keyword">long</span> var2, <span class="keyword">int</span> var4)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> var5;</span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">        <span class="comment">// 内存中 value 最新值</span></span><br><span class="line">        var5 = <span class="keyword">this</span>.getIntVolatile(var1, var2);</span><br><span class="line">    &#125; <span class="keyword">while</span> (!<span class="keyword">this</span>.compareAndSwapInt(var1, var2, var5, var5 + var4));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> var5;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>这里就是 CAS 体现无锁算法的地方, 先来说下这段代码的执行步骤</p>
+<p>1、根据 AtomicInteger 对象 以及 value 内存偏移量获取对应 value 最新值</p>
+<p>2、通过 compareAndSwapInt(…) 将内存中的值(var5)更改为期望的值 (var5+var4), 不存在多线程竞争成功修改返回 True 结束循环, Flase 继续执行循环</p>
+<p>精髓的地方就在于 <strong>compareAndSwapInt(…)</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 比较 var1 的 var2 内存偏移量处的值是否和 var4 相等, 相等则更新为 var5</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> var1 AtomicInteger 对象</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> var2 value 内存偏移量</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> var4 value 原本的值</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> var5 期望将 value 设置的值</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">boolean</span> <span class="title">compareAndSwapInt</span><span class="params">(Object var1, <span class="keyword">long</span> var2, <span class="keyword">int</span> var4, <span class="keyword">int</span> var5)</span></span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>由于是 native 关键字修饰, 我们无法查看其源码, 说明一下方法思路</p>
+<p>1、通过 var1(AtomicInteger) 获取到 var2 (内存偏移量) 的 value 值</p>
+<p>2、将 value(内存中值) 与 var4(线程内获取的value值) 进行比较</p>
+<p>3、如果相等将 var5(期望值) 设置为内存中新的 value 并返回 True</p>
+<p>4、不相等返回 False 继续尝试执行循环</p>
+<h2 id="图文分析-CAS"><a href="#图文分析-CAS" class="headerlink" title="图文分析 CAS"></a>图文分析 CAS</h2><p>这里给出一组图片进一步理解 CAS</p>
+<p><strong>Unsafe#getAndAddInt()</strong> 以此方法为例</p>
+<p>1、这个图片相当于 AtomicInteger 对象对应的 valueOffset 位置</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/45afe56446074b808c863150fb617b63~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>2、线程一执行 var5 = this.getIntVolatile(var1, var2)</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2741e25fdfa4dda84478cd5d5833dc7~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>3、线程二执行 var5 = this.getIntVolatile(var1, var2)</p>
+<p>此时在线程一、二的工作内存中 var5 都是 0</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8e514ec81af04588ac1cda3f015270ad~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>4、线程一欲修改内存中的 value 为1, 通过比对 var4 与内存中的值相等, 内存值成功被设置成 1</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a7ef3e7c2f6c4f0aa6c0b2c851d075b9~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>5、线程二也是要修改内存中对应的 value 值, 发现已经不相等了, 返回 False 继续尝试修改</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/44c7f16712594aadbd36eb4c84f855cb~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<h2 id="不足之处"><a href="#不足之处" class="headerlink" title="不足之处"></a>不足之处</h2><p>CAS 虽然能够实现无锁编程, 在一般情况下对性能做出了提升, 但是并不是没有局限性或缺点</p>
+<p><strong>1、CPU 自旋开销较大</strong></p>
+<p>在高并发情况下, 自旋 CAS 如果长时间不成功, 会给 CPU 带来非常大的执行开销</p>
+<blockquote>
+<p>如果是实现高并发下的计数, 可以使用 LongAdder, 设计的高并发思想真的强!</p>
+</blockquote>
+<p><strong>2、著名的 “ABA” 问题</strong></p>
+<p>CAS 需要在操作值的时候检查下值有没有发生变化, 如果没有发生变化则更新</p>
+<p>但是如果一个值原来是A, 变成了B, 又变成了A, 那么使用 CAS 进行检查时会发现它的值没有发生变化, 但是实际上却变化了</p>
+<p>如果感兴趣的小伙伴可以去看下 JUCA 原子包下的 <strong>AtomicStampedReference</strong></p>
+<h2 id="ABA-问题背景"><a href="#ABA-问题背景" class="headerlink" title="ABA 问题背景"></a>ABA 问题背景</h2><p>AtomicInteger 存在的一个问题, 也是大部分 Atomic 相关类存在的, 就是 ABA 问题</p>
+<p>简短来说, 就是线程一获取到 AtomicInteger 的 value 为 0, 在准备做修改之前</p>
+<p>线程二对 AtomicInteger 的 value 做了两次操作, 一次是将值修改为 1, 然后又将值修改为原来的 0</p>
+<p>此时线程一进行 CAS 操作, 发现内存中的值依旧是 0, OK, 更新成功, 结合下图了解</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/877d28973b8448c191e9b1e68ec8820c~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p><strong>1、为什么线程二能够在线程一获取最新值后进行操作?</strong></p>
+<p>我们以 <strong>AtomicInteger#getAndIncrement</strong> 说明</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">getAndAddInt</span><span class="params">(Object var1, <span class="keyword">long</span> var2, <span class="keyword">int</span> var4)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> var5;</span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">      	<span class="comment">// 标记1</span></span><br><span class="line">        var5 = <span class="keyword">this</span>.getIntVolatile(var1, var2);</span><br><span class="line">    &#125; <span class="keyword">while</span> (!<span class="keyword">this</span>.compareAndSwapInt(var1, var2, var5, var5 + var4));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> var5;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>因为我们的 CPU 执行是 <strong>抢占式的, 时间片分配并不固定</strong></p>
+<p>可能在线程一读取完标记1处之后, 时间片就分配执行了线程二, 此时线程一等待时间片的分配</p>
+<p>等线程二做完两步操作之后, 时间片分配到线程一, 这时才会继续执行</p>
+<p><strong>2、ABA 会引发什么样的问题?</strong></p>
+<p>大家应该都知道了 ABA 的行为是如何发生的, 列举网上的一个小例子, 大致意思如下:</p>
+<p>1、小明银行卡账户余额1万元, 去取款机取钱5千元, 正常应该发起一次请求, 因为网络或机器故障发起了两次请求</p>
+<blockquote>
+<p>各位大哥大姐不要抬杠哈,  不要说什么后端接口幂等, 取款机防重复提交之类的, <strong>例子是为了说明问题</strong>, 感谢 😄</p>
+</blockquote>
+<p>2、线程一「由取款机发起」: 获取当前银行卡余额值1万元, 期望值5千元</p>
+<p>3、线程二「由取款机发起」: 获取当前银行卡余额值1万元, 期望值5千元</p>
+<p>4、线程一成功了, 银行卡内余额剩余五千,  线程二未分配时间片, 获取到余额后被阻塞</p>
+<p>5、此时线程三「支付宝转入银行卡」: 获取当前银行卡余额5千元, 期望值1万元, 修改成功</p>
+<p>6、线程二获得时间片, 发现卡内余额是1万, 成功将卡内余额减少至5千</p>
+<p>7、卡内余额原本应是1万-5千+5千=1万, 最终因为 ABA 问题导致 1万-5千+5千-5千=5千</p>
+<p>当然正式业务中, 可能不会存在此类问题, 不过平常自己业务中使用到了原子类, 还是会埋下潜在隐患</p>
+<p>我们先通过小程序代码来看下, ABA 问题是如何复现的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">    AtomicInteger atomicInteger = <span class="keyword">new</span> AtomicInteger(<span class="number">100</span>);</span><br><span class="line">    <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">        atomicInteger.compareAndSet(<span class="number">100</span>, <span class="number">101</span>);</span><br><span class="line">        atomicInteger.compareAndSet(<span class="number">101</span>, <span class="number">100</span>);</span><br><span class="line">    &#125;).start();</span><br><span class="line"></span><br><span class="line">    Thread.sleep(<span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">        <span class="keyword">boolean</span> result = atomicInteger.compareAndSet(<span class="number">100</span>, <span class="number">101</span>);</span><br><span class="line">        System.out.println(String.format(<span class="string">"  &gt;&gt;&gt; 修改 atomicInteger :: %s "</span>, result));</span><br><span class="line">    &#125;).start();</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *   &gt;&gt;&gt; 修改 atomicInteger :: true </span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>1、创建一个初始值为100的 AtomicInteger, 线程一将100-&gt; 101, 再从101-&gt;100</p>
+<p>2、休眠1000ms, 防止时间片分配线程二提前执行</p>
+<p>3、线程二从100-&gt;101, 修改成功</p>
+<h2 id="AtomicStampedReference"><a href="#AtomicStampedReference" class="headerlink" title="AtomicStampedReference"></a>AtomicStampedReference</h2><p>先来说下解决 ABA 的思路吧, 也就是 <strong>AtomicStampedReference</strong> 的原理</p>
+<p>内部维护了一个 <strong>Pair<T> 对象</strong>, 存储了 value 值和一个版本号, 每次更新除了 value 值还会更新版本号</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Pair</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">  	<span class="comment">// 存储值, 相当于上文的值100</span></span><br><span class="line">    <span class="keyword">final</span> T reference;</span><br><span class="line">  	<span class="comment">// 类似于版本号的概念</span></span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> stamp;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Pair</span><span class="params">(T reference, <span class="keyword">int</span> stamp)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.reference = reference;</span><br><span class="line">        <span class="keyword">this</span>.stamp = stamp;</span><br><span class="line">    &#125;</span><br><span class="line">		<span class="comment">// 创建一个新的Pair对象, 每次值变化时都会创建一个新的对象</span></span><br><span class="line">    <span class="keyword">static</span> &lt;T&gt; AtomicStampedReference.<span class="function">Pair&lt;T&gt; <span class="title">of</span><span class="params">(T reference, <span class="keyword">int</span> stamp)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> AtomicStampedReference.Pair&lt;T&gt;(reference, stamp);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>我们还是先通过一个小程序来了解下 <strong>AtomicStampedReference</strong> 运行机制</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SneakyThrows</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    AtomicStampedReference stampedReference = <span class="keyword">new</span> AtomicStampedReference(<span class="number">100</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">        Thread.sleep(<span class="number">50</span>);</span><br><span class="line">        stampedReference.compareAndSet(<span class="number">100</span>,</span><br><span class="line">                <span class="number">101</span>,</span><br><span class="line">                stampedReference.getStamp(),</span><br><span class="line">                stampedReference.getStamp() + <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        stampedReference.compareAndSet(<span class="number">101</span>,</span><br><span class="line">                <span class="number">100</span>,</span><br><span class="line">                stampedReference.getStamp(),</span><br><span class="line">                stampedReference.getStamp() + <span class="number">1</span>);</span><br><span class="line">    &#125;).start();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">        <span class="keyword">int</span> stamp = stampedReference.getStamp();</span><br><span class="line">        Thread.sleep(<span class="number">500</span>);</span><br><span class="line">        <span class="keyword">boolean</span> result = stampedReference.compareAndSet(<span class="number">100</span>, <span class="number">101</span>, stamp, stamp + <span class="number">1</span>);</span><br><span class="line">        System.out.println(String.format(<span class="string">"  &gt;&gt;&gt; 修改 stampedReference :: %s "</span>, result));</span><br><span class="line">    &#125;).start();</span><br><span class="line">  	<span class="comment">/**</span></span><br><span class="line"><span class="comment"> 			*   &gt;&gt;&gt; 修改 atomicInteger :: false </span></span><br><span class="line"><span class="comment"> 			*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>1、创建 AtomicStampedReference, 并设置初始值100, 以及版本号0</p>
+<p>2、线程一睡眠50ms, 然后对value做出操作100-&gt;101, 101-&gt;100, 版本+1</p>
+<blockquote>
+<p>为什么要睡眠50ms? 为了模拟多线程并发抢占, 让线程二先获取到版本号</p>
+</blockquote>
+<p>3、线程二睡眠500ms, 等待线程一执行完毕, 开始将100-&gt;101, 版本号+1</p>
+<p><strong>不出意外, 线程二一定会修改失败</strong>, 虽然值相对应, 但是预期的版本号与 Pair 中的已不一致</p>
+<h3 id="compareAndSet"><a href="#compareAndSet" class="headerlink" title="compareAndSet"></a>compareAndSet</h3><p>来看下它的 compareAndSet(…) 是如何做的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 比较并设置</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> expectedReference 预期值</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> newReference      期望值</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> expectedStamp     预期版本号</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> newStamp          期望版本号</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span>									是否成功</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">compareAndSet</span><span class="params">(V expectedReference,</span></span></span><br><span class="line"><span class="function"><span class="params">                             V newReference,</span></span></span><br><span class="line"><span class="function"><span class="params">                             <span class="keyword">int</span> expectedStamp,</span></span></span><br><span class="line"><span class="function"><span class="params">                             <span class="keyword">int</span> newStamp)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 获取当前 pair 引用</span></span><br><span class="line">    AtomicStampedReference.Pair&lt;V&gt; current = pair;</span><br><span class="line">    <span class="comment">// 预期值对比 pair value</span></span><br><span class="line">    <span class="keyword">return</span> expectedReference == current.reference &amp;&amp;</span><br><span class="line">      			<span class="comment">// 预期版本号对比 pair stamp</span></span><br><span class="line">            expectedStamp == current.stamp &amp;&amp;</span><br><span class="line">      			<span class="comment">// 期望值对比 pair value</span></span><br><span class="line">            ((newReference == current.reference &amp;&amp;</span><br><span class="line">              			<span class="comment">// 期望版本号对比 pair stamp</span></span><br><span class="line">                    newStamp == current.stamp) ||</span><br><span class="line">             				<span class="comment">// casPair</span></span><br><span class="line">                    casPair(current, Pair.of(newReference, newStamp)));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>如果 compareAndSet(…) 为 True, 必须满足上述条件表达式中3个条件</p>
+<p>1、预期值等于 pair value</p>
+<p>2、预期版本号等于 pair stamp</p>
+<p>3、期望值等于 pair value 并且期望版本号等于 pair stamp</p>
+<blockquote>
+<p>这是 value 和 版本号未发生变化时的场景</p>
+</blockquote>
+<p>4、当第一个条件和第二个条件满足, 但是不满足第三个条件, 证明值和版本号发生了变化, 创建 Pair  进行 CAS 比较替换</p>
+<p><strong>上述条件必须满足1、2、3或者满足1、2、4均可返回 True</strong></p>
+<p>将当前 Pair 原子引用切换为新 Pair, 与 <strong>AtomicReference 思路一致</strong>, 将对象引用进行原子转换</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">casPair</span><span class="params">(AtomicStampedReference.Pair&lt;V&gt; cmp, AtomicStampedReference.Pair&lt;V&gt; val)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> UNSAFE.compareAndSwapObject(<span class="keyword">this</span>, pairOffset, cmp, val);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="使用-Integer-value-的坑"><a href="#使用-Integer-value-的坑" class="headerlink" title="使用 Integer value 的坑"></a>使用 Integer value 的坑</h3><p>小伙伴应该都知道, 如果你写出下面的代码, 是不会在堆内创建对象的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i1 = <span class="number">100</span>;</span><br><span class="line">Integer i2 = <span class="number">101</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>因为 JVM 会在常量池内存储两个对象, 而超过 -128～127 的数值则会在堆中创建对象</p>
+<p>我们 Pair 对象的 reference 是范型, 传递的 int 类型的数值会被转型, 变为 Integer</p>
+<p>使用 Integer 类型并且值不在 -128～127 范围内, 会出现数据比对出错的情况, 大家看一下 compareAndSet(…) 就明白了</p>
+<h3 id="AtomicMarkableReference"><a href="#AtomicMarkableReference" class="headerlink" title="AtomicMarkableReference"></a>AtomicMarkableReference</h3><p>大家看到上面的版本号两次操作必须保持不一致, 得自增或、自减或者别的操作, 相对而言也比较繁琐</p>
+<p>Doug Lea 大师同时也为我们提供了一个省事的类库 <strong>AtomicMarkableReference</strong></p>
+<p>API 接口以及实现思路与上述的基本一致, 只不过把版本号 int 类型替换为了 boolean 类型, 其它无区别</p>
+<p>不过, <strong>AtomicMarkableReference 并不能完全解决 ABA 问题, 只是能够小概率预防</strong></p>
+<h2 id="结言"><a href="#结言" class="headerlink" title="结言"></a>结言</h2><p>由于作者水平有限, 欢迎大家能够反馈指正文章中错误不正确的地方, 感谢 🙏</p>
+<p>小伙伴的喜欢就是对我最大的支持, 如果读了文章有所收获, 希望能够 <strong><font color='#FF0000'>点赞、评论、关注三连!</font></strong></p>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2020/12/02/年轻人-看看Redisson是如何实现分布式锁/" data-toggle="tooltip" data-placement="top" title="年轻人,看看Redisson是如何实现分布式锁">&larr; Previous Post</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=深入掌握底层源码常见的CAS原子编程&body=Hi,I found this website and thought you might like it http://yoursite-url/2020/12/02/深入掌握底层源码常见的-CAS-原子编程/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+<!-- gitalk start -->
+<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+<div id="gitalk-container"></div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+<script src="/js/comment/gitalk.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: '',
+    id: 'Wed Dec 02 2020 17:55:02 GMT+0800', // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    perPage: 10 ,
+    pagerDirection: 'last',
+    createIssueManually: false ,
+    language: 'en'
+  });
+  gitalk.render('gitalk-container');
+
+  var gtFolded = () => {
+    setTimeout(function() {
+      let markdownBody = document.getElementsByClassName("markdown-body");
+      let list = Array.from(markdownBody);
+      list.forEach(item => {
+        if (item.clientHeight > 250) {
+          item.classList.add('gt-comment-body-folded');
+          item.style.maxHeight = '250px';
+          item.title = 'Click to Expand';
+          item.onclick = function() {
+            item.classList.remove('gt-comment-body-folded');
+            item.style.maxHeight = '';
+            item.title = '';
+            item.onclick = null;
+          };
+        }
+      })
+    }, 800);
+  }
+</script>
+
+<!-- gitalk end -->
+
+
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#前言"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">前言</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#非原子计算"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">非原子计算</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#AtomicInteger-简介"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">AtomicInteger 简介</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#它是什么"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">它是什么</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#有什么优点"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">有什么优点</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#结构分析"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">结构分析</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#图文分析-CAS"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">图文分析 CAS</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#不足之处"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">不足之处</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#ABA-问题背景"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">ABA 问题背景</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#AtomicStampedReference"><span class="toc-nav-number">8.</span> <span class="toc-nav-text">AtomicStampedReference</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#compareAndSet"><span class="toc-nav-number">8.1.</span> <span class="toc-nav-text">compareAndSet</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#使用-Integer-value-的坑"><span class="toc-nav-number">8.2.</span> <span class="toc-nav-text">使用 Integer value 的坑</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#AtomicMarkableReference"><span class="toc-nav-number">8.3.</span> <span class="toc-nav-text">AtomicMarkableReference</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#结言"><span class="toc-nav-number">9.</span> <span class="toc-nav-text">结言</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#并发编程" title="并发编程">并发编程</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="" target="_blank">友链1</a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank">友链2</a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank">友链3</a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank">友链4</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+	<!-- Footer (contains ThemeColor、viewer) -->
+	<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+          <li>
+            <a target="_blank" href="https://github.com/V-Vincen">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a target="_blank" href="https://twitter.com/V_Vincen_">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a target="_blank" href="https://www.instagram.com/v_vincen_">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+
+          
+
+          
+
+          
+
+          
+          <li>
+            <a target="_blank" href="http://weibo.com/WVincen">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          马称博客
+          2020
+          <br>
+          Theme by
+          <a href="http://beantech.org" target="_blank" rel="noopener">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a href="https://v-vincen.life/" target="_blank" rel="noopener">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px"
+            src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="/js/hux-blog.min.js"></script>
+
+<!-- catalog -->
+<script type="text/javascript" async="true" src="/js/catalog.js?v=1.0.0"></script>
+
+<!-- totop(rocket) -->
+<script type="text/javascript" async="true" src="/js/totop.js?v=1.0.0"></script>
+
+<!-- Busuanzi JavaScript -->
+<script type="text/javascript" async="true" src="/js/busuanzi.pure.mini.js"></script>
+
+
+<!-- Scroll start -->
+<script type="text/javascript" src="/js/scroll.js"></script>
+<!-- Scroll end -->
+
+
+
+<!-- ThemeColor start -->
+<script type="text/javascript" src="/js/themecolor.js"></script>
+<!-- ThemeColor end -->
+
+
+
+
+
+<!-- viewer start -->
+<!-- viewer start (Picture preview) -->
+<script type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+<script type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+<!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async(u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+  }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){ hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if($('#tag_cloud').length !== 0){ async("http://yoursite-url/js/jquery.tagcloud.js",function(){ $.fn.tagcloud.defaults = { //size: {start: 1, end: 1, unit: 'em'}, color: {start:
+'#bbbbee', end: '#0085a1'}, }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+	<!-- Search -->
+	
+	<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/ziploader.js"></script>
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+	
+
+	<!-- Image to hack wechat -->
+	<!-- <img src="http://yoursite-url/img/icon_wechat.png" width="0" height="0" /> -->
+	<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

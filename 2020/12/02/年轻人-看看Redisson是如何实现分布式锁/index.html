@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-xxxxxx-xx');
+  </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+  <script type="text/javascript">
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+
+  <!-- Baidu Push -->
+  
+  <script>
+    (function() {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc" />
+  <meta name="baidu-site-verification" content="PpzM9WxOJU" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="It&#39;s an IT blog..." />
+  <meta name="keyword" content="v-vincen,v-vincen,livemylife,IT  blog,Blog" />
+  <link rel="shortcut icon" href="/img/avatar/roguerabbit.jpg" />
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/beantech.min.css" />
+
+  <!-- Pygments Highlight CSS -->
+  
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
+
+
+  
+  <!-- wave start -->
+  <link rel="stylesheet" href="/css/wave.css" />
+  <!-- wave end -->
+  
+
+  
+  <!-- top start (article top hot config) -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <!-- top end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+  <!-- viewer start (Picture preview) -->
+  <link rel="stylesheet" href="/css/viewer.min.css" />
+  <!-- viewer end -->
+  
+
+  
+  <!-- Search start -->
+  <link rel="stylesheet" href="/css/search.css" />
+  <!-- Search end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/themecolor.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+
+  
+  <!-- gitalk start -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+  <link rel="stylesheet" href="/css/gitalk.css" />
+  <!-- gitalk end -->
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2020/12/02/年轻人-看看Redisson是如何实现分布式锁/">
+  <title>
+    
+    年轻人,看看Redisson是如何实现分布式锁 - 马称博客
+    
+  </title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+<body ontouchstart="" class="body--home">
+	<!-- ThemeColor -->
+	
+	<!-- ThemeColor -->
+<!-- <div class="toggle" onclick="document.body.classList.toggle('body--dark')">Switch Color</div> -->
+
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons bright-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+
+	
+
+	<!-- Gitter -->
+	
+	<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+	
+
+	<!-- Navigation (contains search)-->
+	<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Live My Life</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          
+
+          
+          
+
+          
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/archive/">Archives</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/categories/">Categories</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/tags/">Tags</a>
+          </li>
+          
+          
+
+          
+          <li><a class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+
+<script>
+  // Drop Bootstarp low-performance Navbar
+  // Use customize navbar with high-quality material design animation
+  // in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+	<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    header.intro-header {
+       /*post*/
+        background-image: url('/img/header_img/archive_bg.jpg');
+      
+    }
+
+    
+      #signature {/*signature*/
+        background-image: url('/img/signature/vincent-white.png');
+      }
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#分布式锁" title="分布式锁">分布式锁</a>
+              
+            </div>
+            <h1>年轻人,看看Redisson是如何实现分布式锁</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by 马称博客 on
+              2020-12-02
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">17</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">4.1k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+	<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6b6e9c4442e422585746f249c593653~tplv-k3u1fbpfcp-watermark.image" alt=""></p>
+<p>要使整个人生都过得舒适、愉快，这是不可能的，因为人类必须具备一种能 <strong>应付逆境的态度</strong> – 卢梭</p>
+<blockquote>
+<p>作者麻花，帝都一枚普普通通程序员，原创自公众号「源码兴趣圈」</p>
+</blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>平常我们在自己实现分布式锁时考虑要点以及性能方面, 可能实现的不是很全面, 业界内关于分布式锁做的比较好的就是 Redisson</p>
+<p>不过是否引入可以结合自己项目的需求, 如果只是引入分布式锁的功能，个人觉得没有必要，自己实现即可；如果大量依赖 Redisson 中分布式功能，那么可以引用</p>
+<p>读 Redisson 源码之前需要掌握分布式锁的由来以及自定义各个实现的优缺点 <a href="https://juejin.cn/post/6897414205071163400" target="_blank" rel="noopener">点击链接查看</a></p>
+<h2 id="ReentrantLock-重入锁"><a href="#ReentrantLock-重入锁" class="headerlink" title="ReentrantLock 重入锁"></a>ReentrantLock 重入锁</h2><p>在说 Redisson 之前我们先来说一下 <strong>JDK 可重入锁: ReentrantLock</strong></p>
+<p>ReentrantLock 保证了 <strong>JVM 共享资源同一时刻只允许单个线程进行操作</strong></p>
+<h3 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h3><p>ReentrantLock 内部公平锁与非公平锁继承了 <strong>AQS[AbstractQueuedSynchronizer]</strong></p>
+<p>1、AQS 内部通过 volatil 修饰的 int 类型变量 state <strong>控制并发情况下线程安全问题及锁重入</strong></p>
+<p>2、将未竞争到锁的线程放入 AQS 的队列中通过 <strong>LockSupport#park、unPark 挂起唤醒</strong></p>
+<blockquote>
+<blockquote>
+<p>关于 AQS 和 RLock 原理查看 <a href="https://juejin.cn/post/6896278031317663751" target="_blank" rel="noopener">链接地址</a></p>
+</blockquote>
+</blockquote>
+<h2 id="Redisson"><a href="#Redisson" class="headerlink" title="Redisson"></a>Redisson</h2><p>可以直接查看 Github <a href="https://github.com/redisson/redisson/wiki" target="_blank" rel="noopener">Redisson官网</a> 介绍, 没有了解过的小伙伴, 可以看一下 Redisson 的 WIKI 目录, 仔细瞅瞅 Redis 是如何被 Redisson 武装到牙齿的, 就是目录太多放不下</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e59a82c412ab49a685b333b4d162b48b~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>这里先过一下和文章有关的一部分内容</p>
+<p>通过项目简介可以看出来, 写这个项目介绍的人水平非常哇塞哈, 从第一段咱们就知道了两个问题</p>
+<h3 id="Redisson-是什么"><a href="#Redisson-是什么" class="headerlink" title="Redisson 是什么"></a>Redisson 是什么</h3><p>Redisson 是架设在 <strong>Redis 基础上的一个 Java 驻内存数据网格框架</strong>, 充分利用 Redis 键值数据库提供的一系列优势, <strong>基于 Java 实用工具包中常用接口</strong>, 为使用者提供了 <strong>一系列具有分布式特性的常用工具类</strong></p>
+<h3 id="Redisson-的优势"><a href="#Redisson-的优势" class="headerlink" title="Redisson 的优势"></a>Redisson 的优势</h3><p>使得原本作为协调单机多线程并发程序的工具包 <strong>获得了协调分布式多机多线程并发系统的能力</strong>, 大大降低了设计和研发大规模分布式系统的难度</p>
+<p>同时结合各富特色的分布式服务, 更进一步 <strong>简化了分布式环境中程序相互之间的协作</strong></p>
+<blockquote>
+<p> 了解到这里就差不多了, 就不向下扩展了, 想要了解详细用途的, 翻一下上面的目录</p>
+</blockquote>
+<h2 id="Redisson-重入锁"><a href="#Redisson-重入锁" class="headerlink" title="Redisson 重入锁"></a>Redisson 重入锁</h2><p>由于 Redisson 太过于复杂, 设计的 API 调用大多用 Netty 相关, 所以这里只对 <strong>如何加锁、如何实现重入锁进行分析以及如何锁续时进行分析</strong></p>
+<h3 id="创建锁"><a href="#创建锁" class="headerlink" title="创建锁"></a>创建锁</h3><p>我这里是将 Redisson 的源码下载到本地了</p>
+<p>下面这个简单的程序, 就是使用 Redisson 创建了一个非公平的可重入锁</p>
+<p>lock() 方法加锁成功 <strong>默认过期时间 30 秒, 并且支持 “看门狗” 续时功能</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Config config = <span class="keyword">new</span> Config();</span><br><span class="line">    config.useSingleServer()</span><br><span class="line">            .setPassword(<span class="string">"123456"</span>)</span><br><span class="line">            .setAddress(<span class="string">"redis://127.0.0.1:6379"</span>);</span><br><span class="line">    RedissonClient redisson = Redisson.create(config);</span><br><span class="line"></span><br><span class="line">    RLock lock = redisson.getLock(<span class="string">"myLock"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        lock.lock();</span><br><span class="line">        <span class="comment">// 业务逻辑</span></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        lock.unlock();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>我们先来看一下 RLock 接口的声明</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">RLock</span> <span class="keyword">extends</span> <span class="title">Lock</span>, <span class="title">RLockAsync</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>RLock 继承了 JDK 源码 JUC 包下的 Lock 接口, 同时也继承了 RLockAsync</p>
+<p>RLockAsync 从字面意思看是 <strong>支持异步的锁</strong>, 证明获取锁时可以异步获取</p>
+<blockquote>
+<p>看了 Redisson 的源码会知道, 注释比黄金贵 🙃️</p>
+</blockquote>
+<p>由于获取锁的 API 较多, 我们这里以 lock() 做源码讲解, 看接口定义相当简单</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * lock 并没有指定锁过期时间, 默认 30 秒</span></span><br><span class="line"><span class="comment"> * 如果获取到锁, 会对锁进行续时</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">lock</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="获取锁实例"><a href="#获取锁实例" class="headerlink" title="获取锁实例"></a>获取锁实例</h3><p>根据上面的小 Demo, 看下第一步获取锁是如何做的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">RLock lock = redisson.getLock(<span class="string">"myLock"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// name 就是锁名称</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> RLock <span class="title">getLock</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">  	<span class="comment">// 默认创建的同步执行器, (存在异步执行器, 因为锁的获取和释放是有强一致性要求, 默认同步)</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> RedissonLock(connectionManager.getCommandExecutor(), name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>Redisson 中所有 Redis 命令都是通过 …Executor 执行的</p>
+<p>获取到默认的同步执行器后, 就要初始化 RedissonLock </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">RedissonLock</span><span class="params">(CommandAsyncExecutor commandExecutor, String name)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>(commandExecutor, name);</span><br><span class="line">    <span class="keyword">this</span>.commandExecutor = commandExecutor;</span><br><span class="line">  	<span class="comment">// 唯一ID</span></span><br><span class="line">    <span class="keyword">this</span>.id = commandExecutor.getConnectionManager().getId();</span><br><span class="line">  	<span class="comment">// 等待获取锁时间</span></span><br><span class="line">    <span class="keyword">this</span>.internalLockLeaseTime = commandExecutor.getConnectionManager().getCfg().getLockWatchdogTimeout();</span><br><span class="line">  	<span class="comment">// ID + 锁名称</span></span><br><span class="line">    <span class="keyword">this</span>.entryName = id + <span class="string">":"</span> + name;</span><br><span class="line">  	<span class="comment">// 发布订阅, 后面关于加、解锁流程会用到</span></span><br><span class="line">    <span class="keyword">this</span>.pubSub = commandExecutor.getConnectionManager().getSubscribeService().getLockPubSub();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="尝试获取锁"><a href="#尝试获取锁" class="headerlink" title="尝试获取锁"></a>尝试获取锁</h3><p>我们来看一下 <strong>RLock#lock()</strong>  底层是如何获取锁的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">lock</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        lock(-<span class="number">1</span>, <span class="keyword">null</span>, <span class="keyword">false</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>leaseTime:</strong> 加锁到期时间, -1 使用默认值 30 秒</p>
+<p><strong>unit:</strong> 时间单位, 毫秒、秒、分钟、小时…</p>
+<p><strong>interruptibly:</strong> 是否可被中断标示</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">lock</span><span class="params">(<span class="keyword">long</span> leaseTime, TimeUnit unit, <span class="keyword">boolean</span> interruptibly)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">    <span class="comment">// 获取当前线程ID</span></span><br><span class="line">    <span class="keyword">long</span> threadId = Thread.currentThread().getId();</span><br><span class="line">    <span class="comment">// 🚩 尝试获取锁, 下面重点分析</span></span><br><span class="line">    Long ttl = tryAcquire(-<span class="number">1</span>, leaseTime, unit, threadId);</span><br><span class="line">    <span class="comment">// 成功获取锁, 过期时间为空</span></span><br><span class="line">    <span class="keyword">if</span> (ttl == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 订阅分布式锁, 解锁时进行通知</span></span><br><span class="line">    RFuture&lt;RedissonLockEntry&gt; future = subscribe(threadId);</span><br><span class="line">    <span class="keyword">if</span> (interruptibly) &#123;</span><br><span class="line">        commandExecutor.syncSubscriptionInterrupted(future);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        commandExecutor.syncSubscription(future);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            <span class="comment">// 再次尝试获取锁</span></span><br><span class="line">            ttl = tryAcquire(-<span class="number">1</span>, leaseTime, unit, threadId);</span><br><span class="line">    				<span class="comment">// 成功获取锁, 过期时间为空, 成功返回</span></span><br><span class="line">            <span class="keyword">if</span> (ttl == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 锁过期时间如果大于零, 则进行带过期时间的阻塞获取</span></span><br><span class="line">            <span class="keyword">if</span> (ttl &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    <span class="comment">// 获取不到锁会在这里进行阻塞, Semaphore, 解锁时释放信号量通知</span></span><br><span class="line">                    future.getNow().getLatch().tryAcquire(ttl, TimeUnit.MILLISECONDS);</span><br><span class="line">                &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (interruptibly) &#123;</span><br><span class="line">                        <span class="keyword">throw</span> e;</span><br><span class="line">                    &#125;</span><br><span class="line">                    future.getNow().getLatch().tryAcquire(ttl, TimeUnit.MILLISECONDS);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">// 锁过期时间小于零, 则死等, 区分可中断及不可中断</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (interruptibly) &#123;</span><br><span class="line">                    future.getNow().getLatch().acquire();</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    future.getNow().getLatch().acquireUninterruptibly();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 取消订阅</span></span><br><span class="line">        unsubscribe(future, threadId);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>这一段代码是用来执行加锁, 继续看下方法实现</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Long ttl = tryAcquire(-<span class="number">1</span>, leaseTime, unit, threadId);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> Long <span class="title">tryAcquire</span><span class="params">(<span class="keyword">long</span> waitTime, <span class="keyword">long</span> leaseTime, TimeUnit unit, <span class="keyword">long</span> threadId)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> get(tryAcquireAsync(waitTime, leaseTime, unit, threadId));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>lock() 以及 tryLock(…) 方法最终都会调用此方法, 分为两个流程分支</p>
+<p>1、tryLock(…) API 异步加锁返回</p>
+<p>2、lock() &amp; tryLock() API 异步加锁并进行锁续时  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> &lt;T&gt; <span class="function">RFuture&lt;Long&gt; <span class="title">tryAcquireAsync</span><span class="params">(<span class="keyword">long</span> waitTime, <span class="keyword">long</span> leaseTime, TimeUnit unit, <span class="keyword">long</span> threadId)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 执行 tryLock(...) 才会进入</span></span><br><span class="line">    <span class="keyword">if</span> (leaseTime != -<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="comment">// 进行异步获取锁</span></span><br><span class="line">        <span class="keyword">return</span> tryLockInnerAsync(waitTime, leaseTime, unit, threadId, RedisCommands.EVAL_LONG);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 尝试异步获取锁, 获取锁成功返回空, 否则返回锁剩余过期时间</span></span><br><span class="line">    RFuture&lt;Long&gt; ttlRemainingFuture = tryLockInnerAsync(waitTime,</span><br><span class="line">            commandExecutor.getConnectionManager().getCfg().getLockWatchdogTimeout(),</span><br><span class="line">            TimeUnit.MILLISECONDS, threadId, RedisCommands.EVAL_LONG);</span><br><span class="line">    <span class="comment">// ttlRemainingFuture 执行完成后触发此操作</span></span><br><span class="line">    ttlRemainingFuture.onComplete((ttlRemaining, e) -&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      	<span class="comment">// ttlRemaining == null 代表获取了锁</span></span><br><span class="line">        <span class="comment">// 获取到锁后执行续时操作</span></span><br><span class="line">        <span class="keyword">if</span> (ttlRemaining == <span class="keyword">null</span>) &#123;</span><br><span class="line">            scheduleExpirationRenewal(threadId);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> ttlRemainingFuture;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>继续看一下 tryLockInnerAsync(…) 详细的加锁流程, 内部采用的 Lua 脚本形式, 保证了原子性操作</p>
+<p>到这一步大家就很明了了, 将 Lua 脚本被 Redisoon 包装最后通过 Netty 进行传输</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;T&gt; <span class="function">RFuture&lt;T&gt; <span class="title">tryLockInnerAsync</span><span class="params">(<span class="keyword">long</span> waitTime, <span class="keyword">long</span> leaseTime, TimeUnit unit, <span class="keyword">long</span> threadId, RedisStrictCommand&lt;T&gt; command)</span> </span>&#123;</span><br><span class="line">    internalLockLeaseTime = unit.toMillis(leaseTime);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> evalWriteAsync(getName(), LongCodec.INSTANCE, command,</span><br><span class="line">            <span class="string">"if (redis.call('exists', KEYS[1]) == 0) then "</span> +</span><br><span class="line">                    <span class="string">"redis.call('hincrby', KEYS[1], ARGV[2], 1); "</span> +</span><br><span class="line">                    <span class="string">"redis.call('pexpire', KEYS[1], ARGV[1]); "</span> +</span><br><span class="line">                    <span class="string">"return nil; "</span> +</span><br><span class="line">                    <span class="string">"end; "</span> +</span><br><span class="line">                    <span class="string">"if (redis.call('hexists', KEYS[1], ARGV[2]) == 1) then "</span> +</span><br><span class="line">                    <span class="string">"redis.call('hincrby', KEYS[1], ARGV[2], 1); "</span> +</span><br><span class="line">                    <span class="string">"redis.call('pexpire', KEYS[1], ARGV[1]); "</span> +</span><br><span class="line">                    <span class="string">"return nil; "</span> +</span><br><span class="line">                    <span class="string">"end; "</span> +</span><br><span class="line">                    <span class="string">"return redis.call('pttl', KEYS[1]);"</span>,</span><br><span class="line">            Collections.singletonList(getName()), internalLockLeaseTime, getLockName(threadId));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>evalWriteAsync(…) 中是对 Eval 命令的封装以及 Netty 的应用就不继续跟进了</p>
+</blockquote>
+<h3 id="加锁-Lua"><a href="#加锁-Lua" class="headerlink" title="加锁 Lua"></a>加锁 Lua</h3><p>执行 Redis 加锁的 Lua 脚本, 截个图让大家看一下参数以及具体含义</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a94ab16e1b7f41c092bcbb4c1b0b46cf~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>KEYS[1]: myLock</p>
+<p>ARGV[1]: 36000… 这个是过期时间, 自己测试的, 单位毫秒</p>
+<p>ARGV[2]: UUID + 线程 ID</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"># KEYS[<span class="number">1</span>] 代表上面的 myLock</span><br><span class="line"># 判断 KEYS[<span class="number">1</span>] 是否存在, 存在返回 <span class="number">1</span>, 不存在返回 <span class="number">0</span></span><br><span class="line"><span class="keyword">if</span> (redis.call(<span class="string">'exists'</span>, KEYS[<span class="number">1</span>]) == <span class="number">0</span>) <span class="keyword">then</span></span><br><span class="line">  # 当 KEYS[<span class="number">1</span>] == <span class="number">0</span> 时代表当前没有锁</span><br><span class="line">  # 使用 hincrby 命令发现 KEYS[<span class="number">1</span>] 不存在并新建一个 hash</span><br><span class="line">  # ARGV[<span class="number">2</span>] 就作为 hash 的第一个key, val 为 <span class="number">1</span></span><br><span class="line">  # 相当于执行了 hincrby myLock <span class="number">91089</span>b45... <span class="number">1</span></span><br><span class="line">	redis.call(<span class="string">'hincrby'</span>, KEYS[<span class="number">1</span>], ARGV[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">  # 设置 KEYS[<span class="number">1</span>] 过期时间, 单位毫秒</span><br><span class="line">	redis.call(<span class="string">'pexpire'</span>, KEYS[<span class="number">1</span>], ARGV[<span class="number">1</span>]);</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">nil</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"># 查找 KEYS[<span class="number">1</span>] 中 key ARGV[<span class="number">2</span>] 是否存在, 存在回返回 <span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> (redis.call(<span class="string">'hexists'</span>, KEYS[<span class="number">1</span>], ARGV[<span class="number">2</span>]) == <span class="number">1</span>) <span class="keyword">then</span></span><br><span class="line">  # 同上, ARGV[<span class="number">2</span>] 为 key 的 val +<span class="number">1</span></span><br><span class="line">	redis.call(<span class="string">'hincrby'</span>, KEYS[<span class="number">1</span>], ARGV[<span class="number">2</span>], <span class="number">1</span>);</span><br><span class="line">  # 同上</span><br><span class="line">	redis.call(<span class="string">'pexpire'</span>, KEYS[<span class="number">1</span>], ARGV[<span class="number">1</span>]);</span><br><span class="line"><span class="keyword">return</span> <span class="literal">nil</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"># 返回 KEYS[<span class="number">1</span>] 过期时间, 单位毫秒</span><br><span class="line"><span class="keyword">return</span> redis.call(<span class="string">'pttl'</span>, KEYS[<span class="number">1</span>]);</span><br></pre></td></tr></table></figure>
+
+
+
+<p>整个 Lua 脚本加锁的流程画图如下:</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/50bb8960854f4344bfab6ba33f5c3506~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>现在回过头看一下获取到锁之后, 是如何为锁进行延期操作的</p>
+<h3 id="锁续时"><a href="#锁续时" class="headerlink" title="锁续时"></a>锁续时</h3><p>之前有和朋友聊过这个话题, 思路和 Redisson 中体现的基本一致</p>
+<p>先说一下 Redisson 的具体实现思路吧, 中文翻译叫做 “看门狗”</p>
+<p><strong>1、</strong> 获取到锁之后执行 “看门狗” 流程</p>
+<p><strong>2、</strong> 使用 Netty 的 Timeout 实现定时延时</p>
+<p><strong>3、</strong> 比如锁过期 30 秒, 每过 1/3 时间也就是 10 秒会检查锁是否存在, 存在则更新锁的超时时间</p>
+<p>可能会有小伙伴会提出这么一个疑问, <strong>如果检查返回存在, 设置锁过期时刚好锁被释放了怎么办?</strong></p>
+<p>有这样的疑问, 代表确实用心去考虑所有可能发生的情况了, 但是不必担心哈</p>
+<p><strong>Redisson 中使用的 Lua 脚本做的检查及设置过期时间操作</strong>, 本身是原子性的不会出现上面情况</p>
+<blockquote>
+<p>如果不想要引用 Netty 的包, 使用延时队列等包工具也是可以完成 “看门狗”</p>
+</blockquote>
+<p>这里也贴一哈相关代码, 能够让小伙伴更直观的了解如何锁续时的</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b81e5e2cfec4031b65bb76bf5f05890~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>我可真是个暖男, 上代码 <strong>RedissonLock#tryAcquireAsync(…)</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> &lt;T&gt; <span class="function">RFuture&lt;Long&gt; <span class="title">tryAcquireAsync</span><span class="params">(<span class="keyword">long</span> waitTime, <span class="keyword">long</span> leaseTime, TimeUnit unit, <span class="keyword">long</span> threadId)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="comment">// 尝试异步获取锁, 获取锁成功返回空, 否则返回锁剩余过期时间</span></span><br><span class="line">    RFuture&lt;Long&gt; ttlRemainingFuture = tryLockInnerAsync(waitTime,</span><br><span class="line">            commandExecutor.getConnectionManager().getCfg().getLockWatchdogTimeout(),</span><br><span class="line">            TimeUnit.MILLISECONDS, threadId, RedisCommands.EVAL_LONG);</span><br><span class="line">    <span class="comment">// ttlRemainingFuture 执行完成后触发此操作</span></span><br><span class="line">    ttlRemainingFuture.onComplete((ttlRemaining, e) -&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 获取到锁后执行续时操作</span></span><br><span class="line">        <span class="keyword">if</span> (ttlRemaining == <span class="keyword">null</span>) &#123;</span><br><span class="line">            scheduleExpirationRenewal(threadId);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> ttlRemainingFuture;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>可以看到续时方法将 threadId 当作标识符进行续时</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">scheduleExpirationRenewal</span><span class="params">(<span class="keyword">long</span> threadId)</span> </span>&#123;</span><br><span class="line">    ExpirationEntry entry = <span class="keyword">new</span> ExpirationEntry();</span><br><span class="line">    ExpirationEntry oldEntry = EXPIRATION_RENEWAL_MAP.putIfAbsent(getEntryName(), entry);</span><br><span class="line">    <span class="keyword">if</span> (oldEntry != <span class="keyword">null</span>) &#123;</span><br><span class="line">        oldEntry.addThreadId(threadId);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        entry.addThreadId(threadId);</span><br><span class="line">        renewExpiration();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>知道核心理念就好了, 没必要研究每一行代码哈</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">renewExpiration</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ExpirationEntry ee = EXPIRATION_RENEWAL_MAP.get(getEntryName());</span><br><span class="line">    <span class="keyword">if</span> (ee == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Timeout task = commandExecutor.getConnectionManager().newTimeout(<span class="keyword">new</span> TimerTask() &#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">(Timeout timeout)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">            ExpirationEntry ent = EXPIRATION_RENEWAL_MAP.get(getEntryName());</span><br><span class="line">            <span class="keyword">if</span> (ent == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            Long threadId = ent.getFirstThreadId();</span><br><span class="line">            <span class="keyword">if</span> (threadId == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            RFuture&lt;Boolean&gt; future = renewExpirationAsync(threadId);</span><br><span class="line">            future.onComplete((res, e) -&gt; &#123;</span><br><span class="line">                <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">                    log.error(<span class="string">"Can't update lock "</span> + getName() + <span class="string">" expiration"</span>, e);</span><br><span class="line">                    <span class="keyword">return</span>;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> (res) &#123;</span><br><span class="line">                    <span class="comment">// 调用本身</span></span><br><span class="line">                    renewExpiration();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, internalLockLeaseTime / <span class="number">3</span>, TimeUnit.MILLISECONDS);</span><br><span class="line"></span><br><span class="line">    ee.setTimeout(task);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="解锁操作"><a href="#解锁操作" class="headerlink" title="解锁操作"></a>解锁操作</h3><p>解锁时的操作相对加锁还是比较简单的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">unlock</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        get(unlockAsync(Thread.currentThread().getId()));</span><br><span class="line">    &#125; <span class="keyword">catch</span> (RedisException e) &#123;</span><br><span class="line">        <span class="keyword">if</span> (e.getCause() <span class="keyword">instanceof</span> IllegalMonitorStateException) &#123;</span><br><span class="line">            <span class="keyword">throw</span> (IllegalMonitorStateException) e.getCause();</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">throw</span> e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>解锁成功后会将之前的”看门狗” Timeout 续时取消, 并返回成功</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> RFuture&lt;Void&gt; <span class="title">unlockAsync</span><span class="params">(<span class="keyword">long</span> threadId)</span> </span>&#123;</span><br><span class="line">    RPromise&lt;Void&gt; result = <span class="keyword">new</span> RedissonPromise&lt;Void&gt;();</span><br><span class="line">    RFuture&lt;Boolean&gt; future = unlockInnerAsync(threadId);</span><br><span class="line"></span><br><span class="line">    future.onComplete((opStatus, e) -&gt; &#123;</span><br><span class="line">      	<span class="comment">// 取消自动续时功能</span></span><br><span class="line">        cancelExpirationRenewal(threadId);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (e != <span class="keyword">null</span>) &#123;</span><br><span class="line">          	<span class="comment">// 失败</span></span><br><span class="line">            result.tryFailure(e);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (opStatus == <span class="keyword">null</span>) &#123;</span><br><span class="line">            IllegalMonitorStateException cause = <span class="keyword">new</span> IllegalMonitorStateException(<span class="string">"attempt to unlock lock, not locked by current thread by node id: "</span></span><br><span class="line">                    + id + <span class="string">" thread-id: "</span> + threadId);</span><br><span class="line">            result.tryFailure(cause);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">				<span class="comment">// 解锁成功</span></span><br><span class="line">        result.trySuccess(<span class="keyword">null</span>);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>又是一个精髓点, 解锁的 Lua 脚本定义</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> RFuture&lt;Boolean&gt; <span class="title">unlockInnerAsync</span><span class="params">(<span class="keyword">long</span> threadId)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> evalWriteAsync(getName(), LongCodec.INSTANCE, RedisCommands.EVAL_BOOLEAN,</span><br><span class="line">            <span class="string">"if (redis.call('hexists', KEYS[1], ARGV[3]) == 0) then "</span> +</span><br><span class="line">                    <span class="string">"return nil;"</span> +</span><br><span class="line">                    <span class="string">"end; "</span> +</span><br><span class="line">                    <span class="string">"local counter = redis.call('hincrby', KEYS[1], ARGV[3], -1); "</span> +</span><br><span class="line">                    <span class="string">"if (counter &gt; 0) then "</span> +</span><br><span class="line">                    <span class="string">"redis.call('pexpire', KEYS[1], ARGV[2]); "</span> +</span><br><span class="line">                    <span class="string">"return 0; "</span> +</span><br><span class="line">                    <span class="string">"else "</span> +</span><br><span class="line">                    <span class="string">"redis.call('del', KEYS[1]); "</span> +</span><br><span class="line">                    <span class="string">"redis.call('publish', KEYS[2], ARGV[1]); "</span> +</span><br><span class="line">                    <span class="string">"return 1; "</span> +</span><br><span class="line">                    <span class="string">"end; "</span> +</span><br><span class="line">                    <span class="string">"return nil;"</span>,</span><br><span class="line">            Arrays.asList(getName(), getChannelName()), LockPubSub.UNLOCK_MESSAGE, internalLockLeaseTime, getLockName(threadId));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>还是来张图理解哈, Lua 脚本会详细分析</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/16c9fc0ceeab42678c6abdb9f9120f7f~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<h3 id="解锁-Lua"><a href="#解锁-Lua" class="headerlink" title="解锁 Lua"></a>解锁 Lua</h3><p>老规矩, 图片加参数说明</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/39c9a5238f0944dbb211478882253e6c~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>KEYS[1]: myLock</p>
+<p>KEYS[2]: redisson_lock_channel:{myLock}</p>
+<p>ARGV[1]: 0</p>
+<p>ARGV[2]: 360000… (过期时间)</p>
+<p>ARGV[3]: 7f0c54e2…(Hash 中的锁 Key)</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"># 判断 KEYS[<span class="number">1</span>] 中是否存在 ARGV[<span class="number">3</span>]</span><br><span class="line"><span class="keyword">if</span> (redis.call(<span class="string">'hexists'</span>, KEYS[<span class="number">1</span>], ARGV[<span class="number">3</span>]) == <span class="number">0</span>) <span class="keyword">then</span></span><br><span class="line"><span class="keyword">return</span> <span class="literal">nil</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"># 将 KEYS[<span class="number">1</span>] 中 ARGV[<span class="number">3</span>] Val - <span class="number">1</span></span><br><span class="line"><span class="keyword">local</span> counter = redis.call(<span class="string">'hincrby'</span>, KEYS[<span class="number">1</span>], ARGV[<span class="number">3</span>], <span class="number">-1</span>);</span><br><span class="line"># 如果返回大于<span class="number">0</span> 证明是一把重入锁</span><br><span class="line"><span class="keyword">if</span> (counter &gt; <span class="number">0</span>) <span class="keyword">then</span></span><br><span class="line">  # 重制过期时间</span><br><span class="line">	redis.call(<span class="string">'pexpire'</span>, KEYS[<span class="number">1</span>], ARGV[<span class="number">2</span>]);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  # 删除 KEYS[<span class="number">1</span>]</span><br><span class="line">	redis.call(<span class="string">'del'</span>, KEYS[<span class="number">1</span>]);</span><br><span class="line">  # 通知阻塞等待线程或进程资源可用</span><br><span class="line">	redis.call(<span class="string">'publish'</span>, KEYS[<span class="number">2</span>], ARGV[<span class="number">1</span>]);</span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">return</span> <span class="literal">nil</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Redlock-算法"><a href="#Redlock-算法" class="headerlink" title="Redlock 算法"></a>Redlock 算法</h2><p>不可否认, Redisson 设计的分布式锁真的很 NB, 但是还是没有解决 <strong>主从节点下异步同步数据导致锁丢失问题</strong></p>
+<p>所以 Redis 作者 Antirez 推出 <strong>红锁算法</strong>, 这个算法的精髓就是: <strong>没有从节点, 如果部署多台 Redis, 各实例之间相互独立, 不存在主从复制或者其他集群协调机制</strong></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4ca4b96e1b7f44cbbb868b9a3863b8db~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><p>创建多个 Redisson Node, 由这些无关联的 Node 组成一个完整的分布式锁</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    String lockKey = <span class="string">"myLock"</span>;</span><br><span class="line">    Config config = <span class="keyword">new</span> Config();</span><br><span class="line">    config.useSingleServer().setPassword(<span class="string">"123456"</span>).setAddress(<span class="string">"redis://127.0.0.1:6379"</span>);</span><br><span class="line">    Config config2 = <span class="keyword">new</span> Config();</span><br><span class="line">    config.useSingleServer().setPassword(<span class="string">"123456"</span>).setAddress(<span class="string">"redis://127.0.0.1:6380"</span>);</span><br><span class="line">    Config config3 = <span class="keyword">new</span> Config();</span><br><span class="line">    config.useSingleServer().setPassword(<span class="string">"123456"</span>).setAddress(<span class="string">"redis://127.0.0.1:6381"</span>);</span><br><span class="line"></span><br><span class="line">    RLock lock = Redisson.create(config).getLock(lockKey);</span><br><span class="line">    RLock lock2 = Redisson.create(config2).getLock(lockKey);</span><br><span class="line">    RLock lock3 = Redisson.create(config3).getLock(lockKey);</span><br><span class="line"></span><br><span class="line">    RedissonRedLock redLock = <span class="keyword">new</span> RedissonRedLock(lock, lock2, lock3);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        redLock.lock();</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        redLock.unlock();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cc9b0a99cb1843af8b3549fcb8062c10~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<p>当然, 对于 Redlock 算法不是没有质疑声, 大家可以去 Redis 官网查看Martin Kleppmann 与 Redis 作者Antirez 的辩论</p>
+<h3 id="CAP-原则之间的取舍"><a href="#CAP-原则之间的取舍" class="headerlink" title="CAP 原则之间的取舍"></a>CAP 原则之间的取舍</h3><p>CAP 原则又称 CAP 定理, 指的是在一个分布式系统中,  Consistency（一致性）、 Availability（可用性）、Partition tolerance（分区容错性）, <strong>三者不可得兼</strong></p>
+<p><strong>一致性(C) :</strong> 在分布式系统中的所有数据备份, 在同一时刻是否同样的值(等同于所有节点访问同一份最新的数据副本)</p>
+<p><strong>可用性(A):</strong> 在集群中一部分节点故障后, 集群整体是否还能响应客户端的读写请求(对数据更新具备高可用性)</p>
+<p><strong>分区容忍性(P):</strong> 以实际效果而言, 分区相当于对通信的时限要求. 系统如果不能在时限内达成数据一致性, 就意味着发生了分区的情况, 必须就当前操作在 C 和 A 之间做出选择</p>
+<h3 id="分布式锁选型"><a href="#分布式锁选型" class="headerlink" title="分布式锁选型"></a>分布式锁选型</h3><p>如果要满足上述分布式锁之间的强一致性, 可以采用 Zookeeper 的分布式锁, <strong>因为它底层的 ZAB协议(原子广播协议), 天然满足 CP</strong></p>
+<p>但是这也意味着性能的下降, 所以不站在具体数据下看 Redis 和 Zookeeper, 代表着性能和一致性的取舍</p>
+<p>如果项目没有强依赖 ZK, 使用 Redis 就好了, 因为现在 Redis 用途很广, 大部分项目中都引用了 Redis</p>
+<p>没必要对此再引入一个新的组件, 如果业务场景对于 Redis 异步方式的同步数据造成锁丢失无法忍受, 在业务层处理就好了</p>
+<h2 id="写在最后的话"><a href="#写在最后的话" class="headerlink" title="写在最后的话"></a>写在最后的话</h2><p>最近都在写多线程源码相关的, 后面会输出 JUC 下源码解析</p>
+<p>1、CountDownLatch</p>
+<p>2、ThreadLocal</p>
+<p>3、Atomic 相关</p>
+<p>包括最近两篇分布式锁的文章, 篇幅都比较长, 希望大家能耐心观看</p>
+<p> 希望大家能够反馈指正文章中错误不正确的地方🙏，小伙伴的喜欢就是对我最大的支持, 最后希望大家能够 <strong>点赞、评论、在看三连!</strong></p>
+<p><strong>推荐阅读：</strong></p>
+<ul>
+<li><a href="https://juejin.cn/post/6896645994012737544" target="_blank" rel="noopener">短文 | 如何解决 JDK 线程池不超过最大线程数下快速消费任务</a></li>
+<li><a href="https://juejin.cn/post/6896278031317663751" target="_blank" rel="noopener">万字图文 | 聊一聊 ReentrantLock 和 AQS 那点事（看完不会你找我）</a></li>
+<li><a href="https://juejin.cn/post/6891814155960107015" target="_blank" rel="noopener">如何处理 JDK 线程池内线程执行异常?</a></li>
+<li><a href="https://juejin.cn/post/6891120931716988942" target="_blank" rel="noopener">谨慎使用 Java8 新特性 parallelStream</a></li>
+</ul>
+<p><font size='3' color='#009999'><em>作者麻花，坐标帝都 Java 后端研发，励志成为架构师的一枚处女座程序员，专注高并发、框架底层源码、分布式等知识分享</em></font></p>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2020/12/02/Redis分布式锁原理看这篇就够了-循循渐进/" data-toggle="tooltip" data-placement="top" title="Redis分布式锁原理看这篇就够了, 循循渐进">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/2020/12/02/深入掌握底层源码常见的-CAS-原子编程/" data-toggle="tooltip" data-placement="top" title="深入掌握底层源码常见的CAS原子编程">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=年轻人,看看Redisson是如何实现分布式锁&body=Hi,I found this website and thought you might like it http://yoursite-url/2020/12/02/年轻人-看看Redisson是如何实现分布式锁/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+<!-- gitalk start -->
+<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+<div id="gitalk-container"></div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+<script src="/js/comment/gitalk.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: '',
+    id: 'Wed Dec 02 2020 23:19:07 GMT+0800', // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    perPage: 10 ,
+    pagerDirection: 'last',
+    createIssueManually: false ,
+    language: 'en'
+  });
+  gitalk.render('gitalk-container');
+
+  var gtFolded = () => {
+    setTimeout(function() {
+      let markdownBody = document.getElementsByClassName("markdown-body");
+      let list = Array.from(markdownBody);
+      list.forEach(item => {
+        if (item.clientHeight > 250) {
+          item.classList.add('gt-comment-body-folded');
+          item.style.maxHeight = '250px';
+          item.title = 'Click to Expand';
+          item.onclick = function() {
+            item.classList.remove('gt-comment-body-folded');
+            item.style.maxHeight = '';
+            item.title = '';
+            item.onclick = null;
+          };
+        }
+      })
+    }, 800);
+  }
+</script>
+
+<!-- gitalk end -->
+
+
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#前言"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">前言</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#ReentrantLock-重入锁"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">ReentrantLock 重入锁</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#实现思路"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">实现思路</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Redisson"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Redisson</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Redisson-是什么"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">Redisson 是什么</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Redisson-的优势"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">Redisson 的优势</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Redisson-重入锁"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">Redisson 重入锁</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#创建锁"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">创建锁</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#获取锁实例"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">获取锁实例</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#尝试获取锁"><span class="toc-nav-number">4.3.</span> <span class="toc-nav-text">尝试获取锁</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#加锁-Lua"><span class="toc-nav-number">4.4.</span> <span class="toc-nav-text">加锁 Lua</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#锁续时"><span class="toc-nav-number">4.5.</span> <span class="toc-nav-text">锁续时</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#解锁操作"><span class="toc-nav-number">4.6.</span> <span class="toc-nav-text">解锁操作</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#解锁-Lua"><span class="toc-nav-number">4.7.</span> <span class="toc-nav-text">解锁 Lua</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Redlock-算法"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">Redlock 算法</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#如何使用"><span class="toc-nav-number">5.1.</span> <span class="toc-nav-text">如何使用</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#CAP-原则之间的取舍"><span class="toc-nav-number">5.2.</span> <span class="toc-nav-text">CAP 原则之间的取舍</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#分布式锁选型"><span class="toc-nav-number">5.3.</span> <span class="toc-nav-text">分布式锁选型</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#写在最后的话"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">写在最后的话</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#分布式锁" title="分布式锁">分布式锁</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="" target="_blank">友链1</a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank">友链2</a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank">友链3</a>
+          </li>
+          
+          <li>
+            <a href="" target="_blank">友链4</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+	<!-- Footer (contains ThemeColor、viewer) -->
+	<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+          <li>
+            <a target="_blank" href="https://github.com/V-Vincen">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a target="_blank" href="https://twitter.com/V_Vincen_">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a target="_blank" href="https://www.instagram.com/v_vincen_">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+
+          
+
+          
+
+          
+
+          
+          <li>
+            <a target="_blank" href="http://weibo.com/WVincen">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          马称博客
+          2020
+          <br>
+          Theme by
+          <a href="http://beantech.org" target="_blank" rel="noopener">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a href="https://v-vincen.life/" target="_blank" rel="noopener">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px"
+            src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="/js/hux-blog.min.js"></script>
+
+<!-- catalog -->
+<script type="text/javascript" async="true" src="/js/catalog.js?v=1.0.0"></script>
+
+<!-- totop(rocket) -->
+<script type="text/javascript" async="true" src="/js/totop.js?v=1.0.0"></script>
+
+<!-- Busuanzi JavaScript -->
+<script type="text/javascript" async="true" src="/js/busuanzi.pure.mini.js"></script>
+
+
+<!-- Scroll start -->
+<script type="text/javascript" src="/js/scroll.js"></script>
+<!-- Scroll end -->
+
+
+
+<!-- ThemeColor start -->
+<script type="text/javascript" src="/js/themecolor.js"></script>
+<!-- ThemeColor end -->
+
+
+
+
+
+<!-- viewer start -->
+<!-- viewer start (Picture preview) -->
+<script type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+<script type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+<!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async(u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+  }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){ hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if($('#tag_cloud').length !== 0){ async("http://yoursite-url/js/jquery.tagcloud.js",function(){ $.fn.tagcloud.defaults = { //size: {start: 1, end: 1, unit: 'em'}, color: {start:
+'#bbbbee', end: '#0085a1'}, }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+	<!-- Search -->
+	
+	<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/ziploader.js"></script>
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+	
+
+	<!-- Image to hack wechat -->
+	<!-- <img src="http://yoursite-url/img/icon_wechat.png" width="0" height="0" /> -->
+	<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
