@@ -141,7 +141,7 @@
   <link rel="canonical" href="http://yoursite-url/2020/12/02/Redis分布式锁原理看这篇就够了-循循渐进/">
   <title>
     
-    Redis分布式锁原理看这篇就够了, 循循渐进 - 马称博客
+    Redis分布式锁原理看这篇就够了, 循循渐进 - 陈冰博客
     
   </title>
 <meta name="generator" content="Hexo 4.2.1"></head>
@@ -323,7 +323,7 @@
             <h1>Redis分布式锁原理看这篇就够了, 循循渐进</h1>
             <h2 class="subheading"></h2>
             <span class="meta">
-              Posted by 马称博客 on
+              Posted by 陈冰博客 on
               2020-12-02
             </span>
 
@@ -336,7 +336,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">3.1k</span> In Total
+              Words <span class="post-count">2.9k</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- 不蒜子统计 start -->
@@ -397,7 +397,7 @@
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
         <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/23616e6031a54317874149941fc5f2b7~tplv-k3u1fbpfcp-watermark.image" alt=""></p>
-<p>年轻的时候，爱上什么都不为过。成熟了以后，放弃什么都能理解；每个人终其一生都在寻找，那个和自己灵魂相近的人  – 莫言</p>
+<p>年轻的时候，爱上什么都不为过。成熟了以后，放弃什么都能理解；每个人终其一生都在寻找，那个和自己灵魂相近的人 – 莫言</p>
 <blockquote>
 <p>人若无名，专心练剑。作者麻花，帝都一枚普普通通程序员，文章原创自公众号 <strong>源码兴趣圈</strong></p>
 </blockquote>
@@ -424,9 +424,9 @@
 <p><strong>保证同一时间只能有一个客户端对共享资源进行操作</strong></p>
 </blockquote>
 <p>比对刚才举的例子, 不论部署多少台优惠券服务, 只会有 <strong>一台服务能够对优惠券数量进行增删操作</strong></p>
-<p>另外有几点要求也是必须要满足的: </p>
+<p>另外有几点要求也是必须要满足的:</p>
 <p>1、<strong>不会发生死锁。</strong> 即使有一个客户端在持有锁的期间崩溃而没有主动解锁，也能保证后续其他客户端能加锁</p>
-<p>2、<strong>具有容错性。</strong> 只要大部分的Redis节点正常运行，客户端就可以加锁和解锁</p>
+<p>2、<strong>具有容错性。</strong> 只要大部分的 Redis 节点正常运行，客户端就可以加锁和解锁</p>
 <p>3、<strong>解铃还须系铃人。</strong> 加锁和解锁必须是同一个客户端，客户端自己不能把别人加的锁给解了</p>
 <p>分布式锁实现大致分为三种, Redis、Zookeeper、数据库, 文章以 Redis 展开分布式锁的讨论</p>
 <h2 id="分布式锁演进史"><a href="#分布式锁演进史" class="headerlink" title="分布式锁演进史"></a>分布式锁演进史</h2><p>先来构思下分布式锁实现思路</p>
@@ -440,13 +440,11 @@
 <p>由于使用的是 Spring 提供的 Redis 封装的 Start 包, 所有有些命令与 Redis 原生命令不相符</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setIfAbsent(key, val) -&gt; setnx(key, val)</span><br></pre></td></tr></table></figure>
 
-
-
 <p>加了简单的几行代码, 一个简单的分布式锁的雏形就出来了</p>
 <h3 id="第二版-expire"><a href="#第二版-expire" class="headerlink" title="第二版 expire"></a>第二版 expire</h3><p>上面第一版基于 setnx 命令实现分布式锁的缺陷也是很明显的, 那就是 <strong>一定情况下可能发生死锁</strong></p>
 <p>画个图, 举个例子说明哈</p>
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d4bfa384a59d4200811880243e73b154~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
-<p>上图说明, 线程1在成功获取锁后, 执行流程时异常结束, <strong>没有执行释放锁操作</strong>, 这样就会 <strong>产生死锁</strong></p>
+<p>上图说明, 线程 1 在成功获取锁后, 执行流程时异常结束, <strong>没有执行释放锁操作</strong>, 这样就会 <strong>产生死锁</strong></p>
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8c7506b17b1c43fe8ba56841e3f958be~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
 <p>如果方法执行异常导致的线程被回收, 那么可以将解锁操作放到 finally 块中</p>
 <p>但是还有存在死锁问题, <strong>如果获得锁的线程在执行中, 服务被强制停止或服务器宕机, 锁依然不会得到释放</strong></p>
@@ -463,8 +461,8 @@
 <ul>
 <li><strong>EX:</strong> 设置超时时间，单位是秒</li>
 <li><strong>PX:</strong> 设置超时时间，单位是毫秒</li>
-<li><strong>NX:</strong> IF NOT EXIST 的缩写，只有 <strong>KEY不存在的前提下</strong> 才会设置值</li>
-<li><strong>XX:</strong> IF EXIST 的缩写，只有在 <strong>KEY存在的前提下</strong> 才会设置值</li>
+<li><strong>NX:</strong> IF NOT EXIST 的缩写，只有 <strong>KEY 不存在的前提下</strong> 才会设置值</li>
+<li><strong>XX:</strong> IF EXIST 的缩写，只有在 <strong>KEY 存在的前提下</strong> 才会设置值</li>
 </ul>
 <p>继续完善分布式锁的应用程序, 代码如下:</p>
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/709210e5510a41b1a11f729100f103d1~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
@@ -475,7 +473,7 @@
 <p>2、接着线程一获取锁后执行业务流程, 执行的时间超过了过期时间, 锁标志位过期进行释放, 此时线程二获取锁成功</p>
 <p>3、然鹅此时线程一执行完业务后, 开始执行释放锁的流程, 然后顺手就把线程二获取的锁释放了</p>
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f7e27f2ab2ba44fca5cd5754320809a1~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
-<p>如果线上真的发生上述问题, 那真的是xxx, 更甚者可能存在线程一将线程二的锁释放掉之后, 线程三获取到锁, 然后线程二执行完将线程三的锁释放</p>
+<p>如果线上真的发生上述问题, 那真的是 xxx, 更甚者可能存在线程一将线程二的锁释放掉之后, 线程三获取到锁, 然后线程二执行完将线程三的锁释放</p>
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a469201159a6409483e822d9db425ea4~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
 <h3 id="第四版-verify-value"><a href="#第四版-verify-value" class="headerlink" title="第四版 verify value"></a>第四版 verify value</h3><p>事当如今, 只能创建辨别客户端身份的唯一值了, 将加锁及解锁归一化, 上代码~</p>
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3e5db1ec30894fdc88a991cf94cce8f5~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
@@ -484,14 +482,14 @@
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b37507cd5d3d4c4fbdd19920406460e5~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
 <p>大眼一看, 上上下下实现了四版分布式锁, 也该没问题了吧</p>
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cf96127a4aa24bf49e14587012d60a1e~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
-<p>真相就是: 解锁时,  <strong>由于判断锁和删除标志位并不是原子性的, 所以可能还是会存在误删</strong></p>
-<p>1、线程一获取锁后, 执行流程balabala… 判断锁也是自家的, 这时 CPU 转头去做别的事情了, 恰巧线程一的锁过期时间到了</p>
-<p>2、线程二此时顺理成章的获取到了分布式锁, 执行业务逻辑balabala…</p>
+<p>真相就是: 解锁时, <strong>由于判断锁和删除标志位并不是原子性的, 所以可能还是会存在误删</strong></p>
+<p>1、线程一获取锁后, 执行流程 balabala… 判断锁也是自家的, 这时 CPU 转头去做别的事情了, 恰巧线程一的锁过期时间到了</p>
+<p>2、线程二此时顺理成章的获取到了分布式锁, 执行业务逻辑 balabala…</p>
 <p>3、线程一再次分配到时间片继续执行删除操作</p>
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4007b69dd61b4a6bab6e7537f1e9636b~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
 <p>解决这种非原子操作的方式只能 <strong>将判断元素值和删除标志位当作一个原子操作</strong></p>
 <h3 id="第五版-lua"><a href="#第五版-lua" class="headerlink" title="第五版 lua"></a>第五版 lua</h3><p>很不友好的是, del 删除操作并没有提供原子命令, 所以我们需要想点办法</p>
-<p>Redis在 2.6 推出了脚本功能, 允许开发者使用 Lua 语言编写脚本传到 Redis 中执行</p>
+<p>Redis 在 2.6 推出了脚本功能, 允许开发者使用 Lua 语言编写脚本传到 Redis 中执行</p>
 <p>使用 Lua 脚本有什么好处呢?</p>
 <p><strong>1、减少网络开销</strong></p>
 <p>原本我们需要向 Redis 服务请求多次命令, 可以将命令写在 Lua 脚本中, 这样执行只会发起一次网络请求</p>
@@ -505,14 +503,10 @@
 <p>script 脚本就是我们在 Redis 中执行的 Lua 脚本, 后面跟的两个 List 分别是 KEYS、ARGV</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cache.eval(script, Lists.newArrayList(lockKey), Lists.newArrayList(lockValue));</span><br></pre></td></tr></table></figure>
 
-
-
 <p><strong>KEYS[1]:</strong> lockKey</p>
 <p><strong>ARGV[1]:</strong> lockValue</p>
 <p>代码不是很多, 也比较简单, 就是在 Java 中代码实现的逻辑放到了一个 Lua 脚本中</p>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 获取 KEYS[<span class="number">1</span>] 对应的 Val</span><br><span class="line"><span class="keyword">local</span> cliVal = redis.call(<span class="string">'get'</span>, KEYS[<span class="number">1</span>])</span><br><span class="line"># 判断 KEYS[<span class="number">1</span>] 与 ARGV[<span class="number">1</span>] 是否保持一致</span><br><span class="line"><span class="keyword">if</span>(cliVal == ARGV[<span class="number">1</span>]) <span class="keyword">then</span> </span><br><span class="line">  # 删除 KEYS[<span class="number">1</span>]</span><br><span class="line">  redis.call(<span class="string">'del'</span>, KEYS[<span class="number">1</span>]) </span><br><span class="line">  <span class="keyword">return</span> <span class="string">'OK'</span> </span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">nil</span> </span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 获取 KEYS[<span class="number">1</span>] 对应的 Val</span><br><span class="line"><span class="keyword">local</span> cliVal = redis.call(<span class="string">'get'</span>, KEYS[<span class="number">1</span>])</span><br><span class="line"># 判断 KEYS[<span class="number">1</span>] 与 ARGV[<span class="number">1</span>] 是否保持一致</span><br><span class="line"><span class="keyword">if</span>(cliVal == ARGV[<span class="number">1</span>]) <span class="keyword">then</span></span><br><span class="line">  # 删除 KEYS[<span class="number">1</span>]</span><br><span class="line">  redis.call(<span class="string">'del'</span>, KEYS[<span class="number">1</span>])</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'OK'</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
 
 <p>到了这种程度, 已经可以放到一些并发量不大的项目中生产使用了</p>
 <h2 id="TODO-列表"><a href="#TODO-列表" class="headerlink" title="TODO 列表"></a>TODO 列表</h2><p>虽然上述代码已经很大程度上解决了分布式锁可能存在的一些问题</p>
@@ -545,24 +539,11 @@
 <p>但是事无绝对, 对于分布式锁的应用, 还是推荐在 <strong>代码以及数据库表中添加兜底策略, 乐观锁等措施</strong></p>
 <p>另外向大家推荐了一款功能强大的 Redis 客户端, 感兴趣的小伙伴可以引入试下 😊</p>
 <p>由于作者水平有限, 欢迎大家能够反馈指正文章中错误不正确的地方, 感谢 🙏</p>
-<p>小伙伴的喜欢就是对我最大的支持, 如果读了文章有所收获, 希望能够 <strong>点赞、评论、关注三连!</strong></p>
-<p><strong>推荐阅读：</strong></p>
-<ul>
-<li><a href="https://juejin.cn/post/6896645994012737544" target="_blank" rel="noopener">短文 | 如何解决 JDK 线程池不超过最大线程数下快速消费任务</a></li>
-<li><a href="https://juejin.cn/post/6896278031317663751" target="_blank" rel="noopener">万字图文 | 聊一聊 ReentrantLock 和 AQS 那点事（看完不会你找我）</a></li>
-<li><a href="https://juejin.cn/post/6891814155960107015" target="_blank" rel="noopener">如何处理 JDK 线程池内线程执行异常?</a></li>
-<li><a href="https://juejin.cn/post/6891120931716988942" target="_blank" rel="noopener">谨慎使用 Java8 新特性 parallelStream</a></li>
-</ul>
-<p><font size='3' color='#009999'><em>作者麻花，坐标帝都 Java 后端研发，励志成为架构师的一枚处女座程序员，专注高并发、框架底层源码、分布式等知识分享</em></font></p>
 
 
         <hr>
         <!-- Pager -->
         <ul class="pager">
-          
-          <li class="previous">
-            <a href="/2020/12/14/搬迁声明/" data-toggle="tooltip" data-placement="top" title="搬迁声明">&larr; Previous Post</a>
-          </li>
           
           
           <li class="next">
@@ -871,8 +852,8 @@
         </ul>
         <p class="copyright text-muted">
           Copyright &copy;
-          马称博客
-          2020 All Rights Reserved. Designed by Hexo.
+          陈冰博客
+          2022 All Rights Reserved. Designed by Hexo.
           <br>
           <!-- Theme by
           <a href="https://v-vincen.life/" target="_blank" rel="noopener">v-vincen.life</a>
