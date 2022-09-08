@@ -210,13 +210,6 @@
 
           
           <li>
-            <a href="/about/">About</a>
-          </li>
-          
-          
-
-          
-          <li>
             <a href="/archive/">Archives</a>
           </li>
           
@@ -379,36 +372,126 @@
   
   <!-- top start (article top hot config) -->
   
-  <div class="top">
-    <div class="iconfont icon-hot animated infinite tada"></div>
-  </div>
-  
   <!-- top end -->
   
 
 
-  <a href="/2020/12/02/深入掌握底层源码常见的-CAS-原子编程/">
+  <a href="/2022/06/22/超火的钉钉自定义机器人原来是这么设置的/">
     <h2 class="post-title">
-      深入掌握底层源码常见的CAS原子编程
+      超火的钉钉自定义机器人原来是这么设置的
     </h2>
     <h3 class="post-subtitle">
-      Easy to understand and master CAS
+      
     </h3>
     <div class="post-content-preview">
-      前言如果要聊原子类相关的话题, 可以先从基本的概念开始
-1、原子类为了解决什么样的问题?
-答: 为了解决并发场景下无锁的方式保证单一变量的数据一致性
-2、什么情况下存在并发问题?
-答: 多个线程同时读写同一个共享数据时存在多线程并发问题
-解决并发安全问题的方式有很多种方式, 著名的就是 JDK 并发包 concurrent, 为了并发而存在的
-阅读文章收获如下知识：
-**1. 无锁编程产出背......
+      企业内部有较多系统支撑着公司的核心业务流程，譬如 CRM 系统、交易系统、监控报警系统等等。通过钉钉的自定义机器人，可以将这些系统事件同步到钉钉的聊天群
+接入自定义机器人很简单，大概以下几步
+
+点击群设置选择智能群助手
+点击添加机器人最右边按钮选择自定义
+点击添加后设置机器人对应属性
+
+下面会详细介绍其中的步骤，尤其是设置机器人属性这一块。文末介绍了如何优化 markdown 消息类型的样式......
     </div>
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by 陈冰博客 on
-    2020-12-02
+    2022-06-22
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#钉钉" title="钉钉">钉钉</a>
+    
+    <a href="/tags/#机器人" title="机器人">机器人</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+
+  <a href="/2022/06/02/10道常见Redis缓存面试，不看答案你会几道题/">
+    <h2 class="post-title">
+      10 道常见 Redis 缓存面试，不看答案你会几道题
+    </h2>
+    <h3 class="post-subtitle">
+      
+    </h3>
+    <div class="post-content-preview">
+      文章首将对应问题罗列，可以根据目录找到感兴趣的
+
+AOF 为什么直接采用文本协议
+AOF 为什么把命令追加到 aop_buf 中
+Redis 实现分布式锁的方式有几种？最好的是哪一种
+Redis 中的 CAS 操作
+Redis 中的 String 数据结构底层实现
+Redis 中的 Key 过期机制
+Redis 中的 从节点会出发过期策略么
+结合项目中使用的 Redis 客户端说一下序列化的......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by 陈冰博客 on
+    2022-06-02
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#Redis" title="Redis">Redis</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+
+  <a href="/2022/05/01/10道并发编程基础题，不看答案你会几道题/">
+    <h2 class="post-title">
+      10 道并发编程基础题，不看答案你会几道题
+    </h2>
+    <h3 class="post-subtitle">
+      
+    </h3>
+    <div class="post-content-preview">
+      文章首将对应问题罗列，可以根据目录找到感兴趣的
+
+并发和并行指的是什么
+多线程中的忙循环指什么
+什么情况下会发生上下文切换
+什么是临界区概念
+线程池核心线程疑问
+多线程同步和互斥有哪几种实现方式
+AQS 实现过程
+Atomic 原子操作是如何实现的
+为什么要使用线程池
+为什么不使用 Executors 创建线程池
+
+并发和并行指的是什么并发指的是多个任务交替执行，而并行则是指真正意义上的“用......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by 陈冰博客 on
+    2022-05-01
   </p>
   <div class="tags">
     
@@ -429,34 +512,31 @@
   
 
 
-  <a href="/2020/12/02/Redis分布式锁原理看这篇就够了-循循渐进/">
+  <a href="/2022/04/03/python-switch多分支选择的实现/">
     <h2 class="post-title">
-      Redis分布式锁原理看这篇就够了, 循循渐进
+      python switch 多分支选择的实现
     </h2>
     <h3 class="post-subtitle">
       
     </h3>
     <div class="post-content-preview">
       
-年轻的时候，爱上什么都不为过。成熟了以后，放弃什么都能理解；每个人终其一生都在寻找，那个和自己灵魂相近的人 – 莫言
 
-人若无名，专心练剑。作者麻花，帝都一枚普普通通程序员，文章原创自公众号 源码兴趣圈
-
-前言分布式锁相信大家一定不会陌生, 想要用好或者自己写一个却没那么简单
-想要达到上述的条件, 一定要 掌握分布式锁的应用场景, 以及分布式锁的不同实现, 不同实现之间有什么区别
-分布式锁......
+相信玩过几天 python 的小伙伴都知道，python 里并没有 switch 关键字实现，那这是为什么呢？
+根据官方说法 PEP 3103 - A Switch/Case Statement.
+实现 switch case 需要被判断的变量是可哈希和可比较的，这与 python 提倡的灵活性有冲突。在实现上优化不好做，可能到最后最差的情况汇编出来和 if else 组是一样的，所以 ......
     </div>
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by 陈冰博客 on
-    2020-12-02
+    2022-04-03
   </p>
   <div class="tags">
     
-    <a href="/tags/#Redis" title="Redis">Redis</a>
+    <a href="/tags/#Python" title="Python">Python</a>
     
-    <a href="/tags/#分布式锁" title="分布式锁">分布式锁</a>
+    <a href="/tags/#Switch" title="Switch">Switch</a>
     
   </div>
   
@@ -473,31 +553,251 @@
   
 
 
-  <a href="/2020/12/02/年轻人-看看Redisson是如何实现分布式锁/">
+  <a href="/2022/03/12/macos下安装及使用telnet命令进行socket测试/">
     <h2 class="post-title">
-      年轻人,看看Redisson是如何实现分布式锁
+      mac os 下安装及使用 telnet 命令进行 socket 测试
     </h2>
     <h3 class="post-subtitle">
       
     </h3>
     <div class="post-content-preview">
       
-要使整个人生都过得舒适、愉快，这是不可能的，因为人类必须具备一种能 应付逆境的态度 – 卢梭
-
-作者麻花，帝都一枚普普通通程序员，原创自公众号「源码兴趣圈」
-
-前言平常我们在自己实现分布式锁时考虑要点以及性能方面, 可能实现的不是很全面, 业界内关于分布式锁做的比较好的就是 Redisson
-不过是否引入可以结合自己项目的需求, 如果只是引入分布式锁的功能，个人觉得没有必要，自己实现即可；......
+什么是 telnet
+telnet 协议是 TCP/IP 协议族群中的一份子，是远程登录服务器的标注协议和主要方式
+可以把 telnet 当作一种通信协议，可以访问目标主机上的软、硬件资源，telnet 平常就是查看某个端口是否可访问。我们在开发的过程中，tomcat 项目启动默认端口为 8080，那么在启动了服务之后，可以使用 telnet 查看端口是否可用
+在终端使用者电脑上使用 te......
     </div>
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by 陈冰博客 on
-    2020-12-02
+    2022-03-12
   </p>
   <div class="tags">
     
-    <a href="/tags/#分布式锁" title="分布式锁">分布式锁</a>
+    <a href="/tags/#MacOS" title="MacOS">MacOS</a>
+    
+    <a href="/tags/#Telnet" title="Telnet">Telnet</a>
+    
+    <a href="/tags/#Socket" title="Socket">Socket</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+
+  <a href="/2022/02/28/linux-centos7.x安装python3.x替换python2.x（亲测有效）/">
+    <h2 class="post-title">
+      linux centos 7.x 安装 python3.x 替换 python2.x（亲测有效）
+    </h2>
+    <h3 class="post-subtitle">
+      
+    </h3>
+    <div class="post-content-preview">
+      前言
+一般而言，新的 centos 7.x 中自带的 python 都是 2.x 的版本。对于我们运行 python 软件支持并不友好，所以需要进行升级操作
+下载 python3 的包之前，要先安装相关的依赖包，用于下载编译 python3：
+1yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-deve......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by 陈冰博客 on
+    2022-02-28
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#Linux" title="Linux">Linux</a>
+    
+    <a href="/tags/#Centos" title="Centos">Centos</a>
+    
+    <a href="/tags/#Python" title="Python">Python</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+
+  <a href="/2022/02/02/springboot-如何优雅的使用alibaba-rocketmq消息队列/">
+    <h2 class="post-title">
+      springboot 如何优雅的使用 alibaba rocketmq 消息队列
+    </h2>
+    <h3 class="post-subtitle">
+      
+    </h3>
+    <div class="post-content-preview">
+      RocketMQ 是一个 队列模型 的消息中间件，具有高性能、高可靠、高实时、分布式 的特点。它是一个采用 Java 语言开发的分布式的消息系统，由阿里巴巴团队开发，在 2016 年底贡献给 Apache，成为了 Apache 的一个顶级项目。 在阿里内部，RocketMQ 很好地服务了集团大大小小上千个应用，在每年的双十一当天，更有不可思议的万亿级消息通过 RocketMQ 流转。
+废话不......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by 陈冰博客 on
+    2022-02-02
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#SpringBoot" title="SpringBoot">SpringBoot</a>
+    
+    <a href="/tags/#RocketMQ" title="RocketMQ">RocketMQ</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+
+  <a href="/2021/12/02/包含英文半角逗号的文件下载引发的-chrome-bug/">
+    <h2 class="post-title">
+      包含英文半角逗号的文件下载引发的 chrome bug
+    </h2>
+    <h3 class="post-subtitle">
+      
+    </h3>
+    <div class="post-content-preview">
+      
+前言
+公司内部使用 oss 作为文件存储服务器，测试提出一个使用 chrome 浏览器下载文件的 bug
+ERR_RESPONSE_HEADERS_MULTIPLE_CONTENT_DISPOSITION
+
+具体上传下载流程如下：
+
+使用 chrome 浏览器上传文件名称包含英文半角逗号的文件
+上传操作成功，根据 oss 中文件 url 进行下载操作
+请求可以正常发出，但是响应时浏览器发生......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by 陈冰博客 on
+    2021-12-02
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#问题排查" title="问题排查">问题排查</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+
+  <a href="/2021/10/02/10道Java基础面试，不看答案你会几道题/">
+    <h2 class="post-title">
+      10 道 Java 基础面试，不看答案你会几道题
+    </h2>
+    <h3 class="post-subtitle">
+      
+    </h3>
+    <div class="post-content-preview">
+      文章首将对应问题罗列，可以根据目录找到感兴趣的
+
+如何使一个类不可变
+为什么 Stirng 类是不可变的
+为什么成员变量会赋默认值，局部变量需要显示赋值
+Java 中手动出发 GC 垃圾回收的方式
+重写和重载的区别
+Java 中 switch 可以包含的判断条件
+hashCode 与 equals 区别
+装箱运算效率如何
+Java 中存在指针么
+使用最快的方式计算 1 * 2
+
+如何使一个类......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by 陈冰博客 on
+    2021-10-02
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#Java" title="Java">Java</a>
+    
+    <a href="/tags/#面试" title="面试">面试</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+
+  <a href="/2021/06/01/10道数据结构算法题，不看答案你会几道题/">
+    <h2 class="post-title">
+      10 道数据结构算法题，不看答案你会几道题
+    </h2>
+    <h3 class="post-subtitle">
+      
+    </h3>
+    <div class="post-content-preview">
+      文章首将对应问题罗列，可以根据目录找到感兴趣的
+
+ArrayList 和 LinkedList 区别？结合数据结构说明
+B Tree 和 B+ Tree 区别？两个 Tree 对比各自优势
+Mysql 数据库为什么要使用树结构充当索引结构
+LinkedList 的插入时间复杂度
+冒泡排序的 3 种方式？哪种性能最好
+冒泡排序的平均时间复杂度以及空间复杂度分别是多少
+平衡二叉树和红黑树的区别
+......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by 陈冰博客 on
+    2021-06-01
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#数据结构" title="数据结构">数据结构</a>
     
   </div>
   
@@ -555,11 +855,67 @@
     
     
     
-    <a href="/tags/#分布式锁" title="分布式锁" rel="2">分布式锁</a>
-    
-    
-    
     <a href="/tags/#并发编程" title="并发编程" rel="1">并发编程</a>
+    
+    
+    
+    <a href="/tags/#问题排查" title="问题排查" rel="1">问题排查</a>
+    
+    
+    
+    <a href="/tags/#SpringBoot" title="SpringBoot" rel="1">SpringBoot</a>
+    
+    
+    
+    <a href="/tags/#RocketMQ" title="RocketMQ" rel="1">RocketMQ</a>
+    
+    
+    
+    <a href="/tags/#Linux" title="Linux" rel="1">Linux</a>
+    
+    
+    
+    <a href="/tags/#Centos" title="Centos" rel="1">Centos</a>
+    
+    
+    
+    <a href="/tags/#Python" title="Python" rel="2">Python</a>
+    
+    
+    
+    <a href="/tags/#MacOS" title="MacOS" rel="1">MacOS</a>
+    
+    
+    
+    <a href="/tags/#Telnet" title="Telnet" rel="1">Telnet</a>
+    
+    
+    
+    <a href="/tags/#Socket" title="Socket" rel="1">Socket</a>
+    
+    
+    
+    <a href="/tags/#Switch" title="Switch" rel="1">Switch</a>
+    
+    
+    
+    <a href="/tags/#Java" title="Java" rel="1">Java</a>
+    
+    
+    
+    <a href="/tags/#面试" title="面试" rel="1">面试</a>
+    
+    
+    
+    <a href="/tags/#数据结构" title="数据结构" rel="1">数据结构</a>
+    
+    
+    
+    <a href="/tags/#钉钉" title="钉钉" rel="1">钉钉</a>
+    
+    
+    
+    <a href="/tags/#机器人" title="机器人" rel="1">机器人</a>
     
     
   </div>
@@ -580,7 +936,7 @@
     
 
     
-    <p>坐标帝都 Java 后端研发，励志成为架构师的一枚处女座程序员</p>
+    <p>坐标帝都 Java 后端研发，励志成为架构师的一枚程序员</p>
     
 
     <!-- SNS Link -->
@@ -590,53 +946,17 @@
       
 
       
-      <li>
-        <a target="_blank" href="https://blog.csdn.net/qq_37781649">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-copyright fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
+
+      
+
       
 
       
 
       
-      <li>
-        <a target="_blank" href="https://juejin.cn/user/835284568143799">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-gg fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
 
       
 
-      
-      <li>
-        <a target="_blank" href="https://segmentfault.com/u/moon_5fc7bedc3d717">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-sun-o fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-      <li>
-        <a target="_blank" href="https://www.zhihu.com/people/always-48-99">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa  fa-stack-1x fa-inverse">知</i>
-          </span>
-        </a>
-      </li>
       
 
       
@@ -652,16 +972,24 @@
 <div class="widget">
   <ul>
     
-    <a href="2020/12/02/Redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E5%8E%9F%E7%90%86%E7%9C%8B%E8%BF%99%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86-%E5%BE%AA%E5%BE%AA%E6%B8%90%E8%BF%9B/">
-      <li>Redis分布式锁原理看这篇就够了, 循循渐进</li>
+    <a href="2022/06/22/%E8%B6%85%E7%81%AB%E7%9A%84%E9%92%89%E9%92%89%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8E%9F%E6%9D%A5%E6%98%AF%E8%BF%99%E4%B9%88%E8%AE%BE%E7%BD%AE%E7%9A%84/">
+      <li>超火的钉钉自定义机器人原来是这么设置的</li>
     </a>
     
-    <a href="2020/12/02/%E5%B9%B4%E8%BD%BB%E4%BA%BA-%E7%9C%8B%E7%9C%8BRedisson%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/">
-      <li>年轻人,看看Redisson是如何实现分布式锁</li>
+    <a href="2022/06/02/10%E9%81%93%E5%B8%B8%E8%A7%81Redis%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95%EF%BC%8C%E4%B8%8D%E7%9C%8B%E7%AD%94%E6%A1%88%E4%BD%A0%E4%BC%9A%E5%87%A0%E9%81%93%E9%A2%98/">
+      <li>10 道常见 Redis 缓存面试，不看答案你会几道题</li>
     </a>
     
-    <a href="2020/12/02/%E6%B7%B1%E5%85%A5%E6%8E%8C%E6%8F%A1%E5%BA%95%E5%B1%82%E6%BA%90%E7%A0%81%E5%B8%B8%E8%A7%81%E7%9A%84-CAS-%E5%8E%9F%E5%AD%90%E7%BC%96%E7%A8%8B/">
-      <li>深入掌握底层源码常见的CAS原子编程</li>
+    <a href="2022/05/01/10%E9%81%93%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E9%A2%98%EF%BC%8C%E4%B8%8D%E7%9C%8B%E7%AD%94%E6%A1%88%E4%BD%A0%E4%BC%9A%E5%87%A0%E9%81%93%E9%A2%98/">
+      <li>10 道并发编程基础题，不看答案你会几道题</li>
+    </a>
+    
+    <a href="2022/04/03/python-switch%E5%A4%9A%E5%88%86%E6%94%AF%E9%80%89%E6%8B%A9%E7%9A%84%E5%AE%9E%E7%8E%B0/">
+      <li>python switch 多分支选择的实现</li>
+    </a>
+    
+    <a href="2022/03/12/macos%E4%B8%8B%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8telnet%E5%91%BD%E4%BB%A4%E8%BF%9B%E8%A1%8Csocket%E6%B5%8B%E8%AF%95/">
+      <li>mac os 下安装及使用 telnet 命令进行 socket 测试</li>
     </a>
     
   </ul>
@@ -672,20 +1000,6 @@
     
         <!-- Friends Blog -->
 
-<!-- <h5>FRIENDS</h5> -->
-<h5><a href="/">FRIENDS</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="" target="_blank">友链1</a></li>
-  
-  <li><a href="" target="_blank">友链2</a></li>
-  
-  <li><a href="" target="_blank">友链3</a></li>
-  
-  <li><a href="" target="_blank">友链4</a></li>
-  
-</ul>
-
 
         <hr>
     
@@ -693,7 +1007,7 @@
     <!-- <h5>ARCHIVES</h5> -->
     <h5><a href="/archives/">ARCHIVES</a></h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2020/12/">December 2020</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/06/">June 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/05/">May 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/04/">April 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/03/">March 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/02/">February 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2021/12/">December 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2021/10/">October 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2021/06/">June 2021</a><span class="archive-list-count">1</span></li></ul>
     </div>
 
 
@@ -706,16 +1020,36 @@
 <div class="widget">
   <ul>
     
-    <a href="/categories/#Redis">
-      <li>Redis</li>
+    <a href="/categories/#Chrome">
+      <li>Chrome</li>
     </a>
     
-    <a href="/categories/#CAS">
-      <li>CAS</li>
+    <a href="/categories/#快速开始">
+      <li>快速开始</li>
     </a>
     
-    <a href="/categories/#分布式锁">
-      <li>分布式锁</li>
+    <a href="/categories/#升级版本">
+      <li>升级版本</li>
+    </a>
+    
+    <a href="/categories/#测试">
+      <li>测试</li>
+    </a>
+    
+    <a href="/categories/#语言学习">
+      <li>语言学习</li>
+    </a>
+    
+    <a href="/categories/#基础知识">
+      <li>基础知识</li>
+    </a>
+    
+    <a href="/categories/#算法">
+      <li>算法</li>
+    </a>
+    
+    <a href="/categories/#样式设置">
+      <li>样式设置</li>
     </a>
     
   </ul>
@@ -743,53 +1077,17 @@
           
 
           
-          <li>
-            <a target="_blank" href="https://blog.csdn.net/qq_37781649">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-copyright fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
+
+          
+
           
 
           
 
           
-          <li>
-            <a target="_blank" href="https://juejin.cn/user/835284568143799">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-gg fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          
 
           
 
-          
-          <li>
-            <a target="_blank" href="https://segmentfault.com/u/moon_5fc7bedc3d717">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-sun-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          
-
-          
-
-          
-          <li>
-            <a target="_blank" href="https://www.zhihu.com/people/always-48-99">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa  fa-stack-1x fa-inverse">知</i>
-              </span>
-            </a>
-          </li>
           
 
           
